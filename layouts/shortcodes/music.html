@@ -1,0 +1,83 @@
+{{- $scratch := .Page.Scratch.Get "scratch" -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<style type="text/css">
+    .aplayer {
+        background: rgb(55, 56, 62);
+        color: rgb(255, 255, 255);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px
+    }
+
+    .aplayer .aplayer-fixed .aplayer-body {
+        background: rgb(55, 56, 62);
+        color: rgb(255, 255, 255);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1)
+    }
+
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+        fill: #dadadb
+    }
+
+    .aplayer .aplayer-list ol li:hover,
+    .aplayer .aplayer-list ol li.aplayer-list-light {
+        background: var(--theme-color);
+    }
+
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+        color: rgb(55, 56, 62)
+    }
+
+    .aplayer .aplayer-lrc p,
+    .aplayer .aplayer-list ol li .aplayer-list-index,
+    .aplayer .aplayer-list ol li .aplayer-list-author {
+        color: #dadadb
+    }
+
+    .dark-theme .aplayer .aplayer-lrc {
+        text-shadow: -1px -1px 0 #666
+    }
+
+    .aplayer .aplayer-lrc:before {
+        background: -moz-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+        background: -webkit-linear-gradient(top, #212121 0%, rgba(33, 33, 33, 0) 100%);
+        background: linear-gradient(to bottom, #212121 0%, rgba(33, 33, 33, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dadadb', endColorstr='#dadadb')
+    }
+
+    .aplayer .aplayer-lrc:after {
+        background: -moz-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 100%);
+        background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.6) 100%);
+        background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.6) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dadadb', endColorstr='#dadadb')
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+{{- if .IsNamedParams -}}
+{{- if .Get "url" -}}
+<meting-js url="{{ .Get `url` }}" name="{{ .Get `name` }}" artist="{{ .Get `artist` }}" cover="{{ .Get `cover` }}"
+    theme="{{ .Get `theme` | default `#dadadb` }}" {{- with .Get "fixed" }} fixed="{{ . }}" {{ end -}} {{- with
+    .Get "mini" }} mini="{{ . }}" {{ end -}} {{- with .Get "autoplay" }} autoplay="{{ . }}" {{ end -}} {{- with
+    .Get "volume" }} volume="{{ . }}" {{ end -}} {{- with .Get "mutex" }} mutex="{{ . }}" {{ end -}}></meting-js>
+{{- else if .Get "auto" -}}
+<meting-js auto="{{ .Get `auto` }}" theme="{{ .Get `theme` | default `#dadadb` }}" {{- with .Get "fixed" }}
+    fixed="{{ . }}" {{ end -}} {{- with .Get "mini" }} mini="{{ . }}" {{ end -}} {{- with .Get "autoplay" }}
+    autoplay="{{ . }}" {{ end -}} {{- with .Get "loop" }} loop="{{ . }}" {{ end -}} {{- with .Get "order" }}
+    order="{{ . }}" {{ end -}} {{- with .Get "volume" }} volume="{{ . }}" {{ end -}} {{- with .Get "mutex" }}
+    mutex="{{ . }}" {{ end -}} {{- with .Get "list-folded" }} list-folded="{{ . }}" {{ end -}} {{- with
+    .Get "list-max-height" }} list-max-height="{{ . }}" {{ end -}}></meting-js>
+{{- else -}}
+<meting-js server="{{ .Get `server` }}" type="{{ .Get `type` }}" id="{{ .Get `id` }}"
+    theme="{{ .Get `theme` | default `#dadadb` }}" {{- with .Get "fixed" }} fixed="{{ . }}" {{ end -}} {{- with
+    .Get "mini" }} mini="{{ . }}" {{ end -}} {{- with .Get "autoplay" }} autoplay="{{ . }}" {{ end -}} {{- with
+    .Get "loop" }} loop="{{ . }}" {{ end -}} {{- with .Get "order" }} order="{{ . }}" {{ end -}} {{- with .Get "volume"
+    }} volume="{{ . }}" {{ end -}} {{- with .Get "mutex" }} mutex="{{ . }}" {{ end -}} {{- with .Get "list-folded" }}
+    list-folded="{{ . }}" {{ end -}} {{- with .Get "list-max-height" }} list-max-height="{{ . }}" {{ end
+    -}}></meting-js>
+{{- end -}}
+{{- else if strings.HasSuffix (.Get 0) "http" -}}
+<meting-js auto="{{ .Get 0 }}" theme="#dadadb"></meting-js>
+{{- else -}}
+<meting-js server="{{ .Get 0 }}" type="{{ .Get 1 }}" id="{{ .Get 2 }}" theme="#dadadb"></meting-js>
+{{- end -}}
+{{- $scratch.Set "music" true -}}

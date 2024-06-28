@@ -1,0 +1,114 @@
+baseURL: https://xeonzilla.github.io
+title: Xeonzilla's Note
+theme: PaperMod
+defaultContentLanguage: zh
+hasCJKLanguage: true # 自动检测是否包含中文\日文\韩文
+enableRobotsTXT: true
+enableEmoji: true
+enableInlineShortcodes: true #允许内联短码
+paginate: 5 # 每页显示的文章数
+
+taxonomies:
+  tag: tags
+  series: series
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  since: 2024
+  search: true
+  author: Xeonzilla
+  description: Xeonzilla's Note, Xeonzilla的笔记, 动画观后感, 技术相关记录
+  dateFormat: 01-02, 2006
+  homeFullContent: false # 主页显示全部文章内容
+  ShowToc: true # 显示目录
+  TocOpen: true # 自动展开目录
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true # 显示面包屑导航
+  ShowReadingTime: true
+  ShowWordCount: true
+  comments: true
+  defaultTheme: dark
+  ShowShareButtons: true
+  ShareButtons:
+    - x
+    - facebook
+    - whatsapp
+    - telegram
+  homeInfoParams:
+    Title: 欢迎👋 这里是Xeonzilla的笔记
+    Content: ”用一个可以永远存活在互联网上的档案，记录我的琐碎灵感与思考“
+  socialIcons:
+    - name: Telegram
+      url: https://t.me/Xeonzilla
+    - name: Email
+      url: mailto:xeonrao01@gmail.com
+    - name: RSS
+      url: index.xml
+  cover:
+    responsiveImages: false
+    linkFullImages: true
+  fuseOpts:
+    distance: 1000 # 最大搜索距离
+    threshold: 0.4 # 阈值控制匹配的敏感度
+    minMatchCharLength: 0 # 最小匹配字符长度
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+  assets:
+    disableFingerprinting: true # 禁止完整性检查
+
+menus:
+  main:
+    - identifier: search
+      name: 搜索
+      url: /search
+      weight: 10
+    - identifier: home
+      name: 主页
+      url: /
+      weight: 20
+    - identifier: about
+      name: 关于
+      url: /about
+      weight: 30
+    - identifier: license
+      name: 许可
+      url: /license
+      weight: 40
+    - identifier: archives
+      name: 归档
+      url: /post
+      weight: 50
+
+markup:
+  highlight:
+    codeFences: true # 代码围栏功能
+    guessSyntax: true # 猜测语法
+    lineNos: true # 显示行号
+    style: github-dark
+    lineNumbersInTable: true # 使用表来格式化行号和代码,而不是标签
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.6
+
+privacy:
+  vimeo:
+    simple: true
+  twitter:
+    enableDNT: true
+    simple: true
+  instagram:
+    simple: true
+  youtube:
+    privacyEnhanced: true
