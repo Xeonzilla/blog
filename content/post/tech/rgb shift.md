@@ -1,5 +1,6 @@
 ---
 title: 动画中的Chroma Shift和RGB Shift
+slug: chroma_shift_and_rgb_shift_in_anime
 date: 2024-05-26T22:27:00+08:00
 cover:
   image: 
