@@ -1,6 +1,7 @@
 name: build
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -25,9 +26,10 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          EXTERNAL_REPOSITORY: Xeonzilla/Xeonzilla.github.io
           publish_branch: main
           publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
 
