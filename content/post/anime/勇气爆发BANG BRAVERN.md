@@ -1,6 +1,6 @@
 ---
 title: 勇气爆发BANG BRAVERN
-slug: yuki_bakuhatsu_ban_bureiban
+slug: yuuki_bakuhatsu_bang_bravern
 date: 2024-03-22T22:33:00+08:00
 Lastmod: 2024-03-29T13:24:00+08:00
 cover:
