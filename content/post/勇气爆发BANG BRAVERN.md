@@ -4,7 +4,7 @@ slug: yuuki_bakuhatsu_bang_bravern
 date: 2024-03-22T22:33:00+08:00
 Lastmod: 2024-03-29T13:24:00+08:00
 cover:
-  image: https://github.com/Xeonzilla/picx-images-hosting/raw/master/blog/勇气爆发BANG_BRAVERN/2doiux43wj.avif
+  image: /image/24-01-07.avif
 tags: 
   - 动画
   - 二次元

@@ -3,7 +3,7 @@ title: OVERTAKE！
 slug: overtake
 date: 2023-12-21T00:24:00+08:00
 cover:
-  image: https://github.com/Xeonzilla/picx-images-hosting/raw/master/blog/OVERTAKE！/67xadwd0ox.avif
+  image: /image/23-10-01.avif
 tags: 
   - 动画
   - 二次元
