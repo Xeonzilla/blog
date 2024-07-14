@@ -49,6 +49,8 @@ params:
       url: https://t.me/Xeonzilla
     - name: Email
       url: mailto:xeonrao01@gmail.com
+    - name: Github
+      url: https://github.com/Xeonzilla/Xeonzilla.github.io
     - name: RSS
       url: index.xml
   cover:
