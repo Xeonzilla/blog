@@ -65,6 +65,10 @@ params:
       - content
   assets:
     disableFingerprinting: true # 禁止完整性检查
+    favicon: /assets/favicon.ico
+    favicon16x16: /assets/favicon-16x16.png
+    favicon32x32: /assets/favicon-32x32.png
+    apple_touch_icon: apple-touch-icon.png
 
 menus:
   main:
