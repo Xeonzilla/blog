@@ -3,7 +3,8 @@
 {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
 {{- $loading := cond $.IsSingle "eager" "lazy" }}
 <figure class="entry-cover">
-    {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default true }}
+    {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default
+    true }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
     {{- $pageBundleCover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
     {{- $globalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
@@ -28,15 +29,24 @@
         <img loading="{{$loading}}" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ $alt }}">
         {{- end }}
         {{- else }}{{/* For absolute urls and external links, no img processing here */}}
-        {{- if $addLink }}<a href="{{ (.Params.cover.image) | absURL }}" target="_blank" rel="noopener noreferrer">{{end -}}
-            {{ if hasPrefix .Params.cover.image "/image" }}
+        {{- if $addLink }}<a href="{{ (.Params.cover.image) | absURL }}" target="_blank" rel="noopener noreferrer">{{
+            end -}}
+            {{ $defaultWidth := 840 }}
+            {{ $defaultHeight := 470 }}
+            {{ if hasPrefix .Params.cover.image "/img" }}
             {{ $img := resources.Get .Params.cover.image }}
-            {{ if and $img (ne $img.MediaType.SubType "svg") }}
-            {{ $imgConfig := $img.Fit "720x" }}
-            <img loading="lazy" src="{{ $img.Permalink | safeURL }}" alt="{{ $alt }}" width="{{ $imgConfig.Width }}"
-                height="{{ $imgConfig.Height }}" style="max-width: 100%; height: auto;" />
+            {{ if and $img (eq $img.MediaType.Type "image") }}
+            {{ $width := $img.Width | default $defaultWidth }}
+            {{ $height := $img.Height | default $defaultHeight }}
+            {{ if ne $img.MediaType.SubType "svg" }}
+            <img loading="lazy" src="{{ .Params.cover.image | safeURL }}" alt="{{ $alt }}" width="{{ $width }}"
+                height="{{ $height }}" style="max-width: 100%; height: auto;" />
             {{ else }}
             <img loading="lazy" src="{{ .Params.cover.image | safeURL }}" alt="{{ $alt }}" />
+            {{ end }}
+            {{ else }}
+            <img loading="lazy" src="{{ .Params.cover.image | safeURL }}" alt="{{ $alt }}" width="{{ $defaultWidth }}"
+                height="{{ $defaultHeight }}" style="max-width: 100%; height: auto;" />
             {{ end }}
             {{ else }}
             <img loading="lazy" src="{{ .Params.cover.image | safeURL }}" alt="{{ $alt }}" />
