@@ -71,7 +71,7 @@ params:
     favicon16x16: /assets/favicon-16x16.png
     favicon32x32: /assets/favicon-32x32.png
     apple_touch_icon: apple-touch-icon.png
-
+        
 menus:
   main:
     - identifier: search
@@ -119,3 +119,7 @@ privacy:
   youtube:
     privacyEnhanced: true
 
+module:
+  mounts:
+  - source: statics/image
+    target: assets
