@@ -2,7 +2,7 @@ baseURL: https://xeonzilla.github.io
 title: Xeonzilla's Note
 theme: PaperMod
 defaultContentLanguage: zh
-hasCJKLanguage: true # 自动检测是否包含中文\日文\韩文
+hasCJKLanguage: true
 enableRobotsTXT: true
 enableEmoji: true
 enableInlineShortcodes: true #允许内联短码
@@ -70,7 +70,7 @@ params:
     favicon: /assets/favicon.ico
     favicon16x16: /assets/favicon-16x16.png
     favicon32x32: /assets/favicon-32x32.png
-    apple_touch_icon: apple-touch-icon.png
+    apple_touch_icon: /assets/apple-touch-icon.png
 
 menus:
   main:
@@ -94,7 +94,7 @@ menus:
 markup:
   highlight:
     codeFences: true # 代码围栏功能
-    guessSyntax: true # 猜测语法
+    guessSyntax: true
     lineNos: true # 显示行号
     style: github-dark
     lineNumbersInTable: true # 使用表来格式化行号和代码,而不是标签
