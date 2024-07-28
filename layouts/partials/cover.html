@@ -26,14 +26,14 @@
             sizes="(min-width: 768px) 720px, 100vw" src="{{ $cover.Permalink }}" alt="{{ $alt }}" 
             width="{{ $cover.Width }}" height="{{ $cover.Height }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
-        <div style="display: flex; justify-content: center; align-items: center; width: 670.4px; min-height: 377.1px; background-color: rgba(0, 0, 0, 0); position: relative;">
+        <div style="display: flex; justify-content: center; align-items: center; max-width: 670.4px; aspect-ratio: 670.4/377.1; background-color: rgba(0, 0, 0, 0); position: relative;">
             <img loading="{{$loading}}" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ $alt }}">
         </div>
         {{- end }}
     {{- else }}{{/* For absolute urls and external links, no img processing here */}}
         {{- if $addLink }}<a href="{{ (.Params.cover.image) | absURL }}" target="_blank"
             rel="noopener noreferrer">{{ end -}}
-            <div style="display: flex; justify-content: center; align-items: center; width: 670.4px; min-height: 377.1px; background-color: rgba(0, 0, 0, 0); position: relative;">
+            <div style="display: flex; justify-content: center; align-items: center; max-width: 670.4px; aspect-ratio: 670.4/377.1; background-color: rgba(0, 0, 0, 0); position: relative;">
                 <img loading="{{$loading}}" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">
             </div>
     {{- end }}
