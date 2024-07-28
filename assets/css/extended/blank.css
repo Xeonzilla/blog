@@ -82,3 +82,7 @@
 .toc li a:hover {
     color: var(--secondary);
 }
+
+.tag-entry .entry-cover {
+    display: flex;
+}
