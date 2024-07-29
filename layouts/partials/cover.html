@@ -26,16 +26,64 @@
             sizes="(min-width: 768px) 720px, 100vw" src="{{ $cover.Permalink }}" alt="{{ $alt }}" 
             width="{{ $cover.Width }}" height="{{ $cover.Height }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
-        <div style="display: flex; justify-content: center; align-items: center; max-width: 670.4px; aspect-ratio: 670.4/377.1; background-color: rgba(0, 0, 0, 0); position: relative;">
-            <img loading="{{$loading}}" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ $alt }}">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 670.4px;
+                aspect-ratio: 6704/3771;
+                position: relative;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .container img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+        </style>
+        <div class="container">
+            <img onload="resizeContainer(this)" loading="{{$loading}}" src="{{ (path.Join .RelPermalink .Params.cover.image) | absURL }}" alt="{{ $alt }}">
         </div>
+        <script>
+            function resizeContainer(img) {
+                const container = img.parentElement;
+                const aspectRatio = img.naturalHeight / img.naturalWidth;
+                container.style.height = `${container.clientWidth * aspectRatio}px`;
+            }
+        </script>        
         {{- end }}
     {{- else }}{{/* For absolute urls and external links, no img processing here */}}
         {{- if $addLink }}<a href="{{ (.Params.cover.image) | absURL }}" target="_blank"
             rel="noopener noreferrer">{{ end -}}
-            <div style="display: flex; justify-content: center; align-items: center; max-width: 670.4px; aspect-ratio: 670.4/377.1; background-color: rgba(0, 0, 0, 0); position: relative;">
-                <img loading="{{$loading}}" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 670.4px;
+                    aspect-ratio: 6704/3771;
+                    position: relative;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+                .container img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            </style>
+            <div class="container">
+                <img onload="resizeContainer(this)" loading="{{$loading}}" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">
             </div>
+            <script>
+                function resizeContainer(img) {
+                    const container = img.parentElement;
+                    const aspectRatio = img.naturalHeight / img.naturalWidth;
+                    container.style.height = `${container.clientWidth * aspectRatio}px`;
+                }
+            </script>            
     {{- end }}
     {{- if $addLink }}</a>{{ end -}}
     {{/*  Display Caption  */}}
