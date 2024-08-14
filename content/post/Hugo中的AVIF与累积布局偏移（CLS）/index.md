@@ -2,6 +2,7 @@
 title: Hugo中的AVIF与累积布局偏移（CLS）
 slug: hugo_avif_cls
 date: 2024-07-31T13:58:00+08:00
+Lastmod: 2024-08-14T22:39:00+08:00
 cover:
   image: 404.html
   alt: 未设置封面以展示占位效果 | 欢迎👋 这里是Xeonzilla的笔记
@@ -156,6 +157,20 @@ Google的PageSpeed Insights报告中展示了四大维度的指标：`FCP`、`LC
 同上面一样，`max-width: 670.4px; aspect-ratio: 16/9;`是根据所使用的主题封面图片大小而设定的值，需要根据实际情况修改，我所使用的PaperMod主题封面图片尺寸为670.4px*377.1px。
 
 可以看到，PaperMod提供的有关封面显示的代码提供了3段HTML，但是我只修改了后面两段，这是因为第1段HTML需要`params.cover.responsiveImages = true`触发，而我关闭了响应式图片，所以无需修改。
+
+#### inner_cover.html与single.html
+在上面的cover.html中，我们给定了`max-width: 670.4px`，这帮助我们规定封面的大小。然而，PaperMod主题在主页的封面和在文章内的封面大小又有不同，在文章详情页，封面的大小为720px*405px，同文章内图片大小一样。
+
+为了保持内外封面的尺寸，我们需要将两处封面的有关代码解耦。复制一份`cover.html`并将其重命名，为了便于辨认，我将其命名为`inner_cover.html`,意为“内部的封面”，在`inner_cover.html`中，设置`max-width: 720px`。
+
+接着，去到所用主题路径下的`layouts/_default`，复制其中的`single.html`至站点目录下的`layouts/_default`。PaperMod主题所提供的`single.html`有关封面渲染的代码为`{{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}`，将`cover.html`替换为`inner_cover.html`，至此，Hugo在渲染文章时，会将`inner_cover.html`的设定应用到文章详情页封面。
+
+上面的解耦操作参考了[Hugo博客文章封面图片缩小并移到侧边 | PaperMod主题 | Sulv's Blog](https://www.sulvblog.cn/posts/blog/img_right/#3-%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81),相关操作也可参阅这篇文章。这篇文章提到
+>把cover1.html文件里的`<figure class="entry-cover">`修改为`<figure class="entry-cover1">`
+
+但是，在我进行了如上操作后，文章内封面的圆角消失，似乎这个操作影响文章内封面的样式。本着“如无必要，勿增实体”的奥卡姆剃刀精神，我选择不进行修改。经快速测试，不进行如上操作并未带来可见的负面效果。
+
+此外，在进行解耦前，如果文章同时存在封面和插图，那么文章内封面的尺寸与图片一致；文章只存在封面而无插图，则文章内封面尺寸与主页封面一致。这种情况应该是某处代码调用导致的，不一定是bug。
 
 ### 细节说明
 #### CSS
