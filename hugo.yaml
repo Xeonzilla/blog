@@ -34,7 +34,7 @@ params:
   ShowReadingTime: true
   ShowWordCount: true
   comments: true
-  defaultTheme: dark
+  defaultTheme: auto
   ShowShareButtons: true
   ShareButtons:
     - x

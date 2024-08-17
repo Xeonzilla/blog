@@ -98,6 +98,7 @@ giscus背靠Github，做到了免费和Markdown支持，是一款优秀的评论
 - [Hugo](https://tricks.one/tags/hugo/)
 - [Hugo+PaperMod 双语博客搭建 Home-Info+Profile Mode - YUNYI BLOG](https://www.yunyitang.me/hugo-papermod-blog/)
 - [Hugo + GitHub Action，搭建你的博客自动发布系统 · Pseudoyu](https://www.pseudoyu.com/zh/2022/05/29/deploy_your_blog_using_hugo_and_github_action/)
+- [How to Enable Giscus Comments System in Hugo | Jason Lyu](https://12x.me/posts/2023-04-18-hugo-giscus/)
 - [利用 Favicon 为 Hugo 静态站点添加图标 - Bright's Blog](https://ibrights.github.io/post/blog20210527/)
 - [Hugo + PaperMod搭建技术博客 | Kunyang's Blog](https://kyxie.github.io/zh/blog/tech/papermod/)
 - [博客的发展简史和框架简介 | 槿呈Goidea](https://justgoidea.com/posts/2023-056/)
