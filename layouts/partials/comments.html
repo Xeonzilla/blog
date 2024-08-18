@@ -1,15 +1,90 @@
-<div id="comments"></div>
+<div class="comments-section">
+
+    <div class="comment-toggle-buttons">
+        <button id="show-giscus" class="active" onclick="showGiscus()">Giscus Comments</button>
+        <button id="show-telegram" onclick="showTelegram()">Telegram Discussion</button>
+    </div>
+
+    <div id="giscus-comments" class="comment-box"></div>
+    <div id="telegram-discussion" class="comment-box" style="display: none; min-height: 186.2px;"></div>
+
+</div>
+
+<style>
+    .comment-toggle-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .comment-toggle-buttons button {
+        display: block;
+        padding: 0 14px;
+        color: var(--primary);
+        font-size: 14px;
+        line-height: 34px;
+        background: var(--code-bg);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+    }
+
+    .comment-toggle-buttons button:hover {
+        background: var(--border);
+    }
+
+    .comment-toggle-buttons button.active {
+        pointer-events: none;
+        background-color: transparent;
+    }
+</style>
+
 <script>
-    const getStoredTheme = () => localStorage.getItem("pref-theme") === "dark" ? "noborder_dark" : "noborder_light";
+    function showGiscus() {
+        document.getElementById('show-giscus').classList.add('active');
+        document.getElementById('show-telegram').classList.remove('active');
+        document.getElementById('giscus-comments').style.display = 'block';
+        document.getElementById('telegram-discussion').style.display = 'none';
+        setGiscusTheme();
+    }
+
+    function showTelegram() {
+        document.getElementById('show-giscus').classList.remove('active');
+        document.getElementById('show-telegram').classList.add('active');
+        document.getElementById('giscus-comments').style.display = 'none';
+        document.getElementById('telegram-discussion').style.display = 'block';
+        setTelegramTheme();
+    }
+
+    const getStoredTheme = () => localStorage.getItem("pref-theme") === "dark" ? "dark" : "light";
+
     const setGiscusTheme = () => {
         const sendMessage = (message) => {
             const iframe = document.querySelector('iframe.giscus-frame');
             if (iframe) {
                 iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
             }
-        }
-        sendMessage({ setConfig: { theme: getStoredTheme() } })
-    }
+        };
+        sendMessage({ setConfig: { theme: getStoredTheme() === 'dark' ? 'noborder_dark' : 'noborder_light' } });
+    };
+
+    const loadTelegramWidget = () => {
+        const telegramDiv = document.getElementById('telegram-discussion');
+        telegramDiv.innerHTML = "";
+        const telegramScript = document.createElement("script");
+        telegramScript.src = "https://telegram.org/js/telegram-widget.js?22";
+        telegramScript.defer = true;
+        telegramScript.setAttribute("data-telegram-discussion", "XeonAnimeLog");
+        telegramScript.setAttribute("data-comments-limit", "50");
+        telegramScript.setAttribute("data-colorful", "1");
+        telegramScript.setAttribute("data-dark", getStoredTheme() === "dark" ? "1" : "0");
+        telegramDiv.appendChild(telegramScript);
+    };
+
+    const setTelegramTheme = () => {
+        loadTelegramWidget();
+    };
 
     document.addEventListener("DOMContentLoaded", () => {
         const giscusAttributes = {
@@ -23,21 +98,26 @@
             "data-reactions-enabled": "1",
             "data-emit-metadata": "0",
             "data-input-position": "top",
-            "data-theme": getStoredTheme(),
+            "data-theme": getStoredTheme() === 'dark' ? 'noborder_dark' : 'noborder_light',
             "data-lang": "zh-CN",
             "data-loading": "lazy",
             "crossorigin": "anonymous",
-            "async": "",
         };
 
         const giscusScript = document.createElement("script");
         Object.entries(giscusAttributes).forEach(
             ([key, value]) => giscusScript.setAttribute(key, value));
-        document.querySelector("#comments").appendChild(giscusScript);
+        giscusScript.defer = true;
+        document.querySelector("#giscus-comments").appendChild(giscusScript);
+
+        loadTelegramWidget();
 
         const themeSwitcher = document.querySelector("#theme-toggle");
         if (themeSwitcher) {
-            themeSwitcher.addEventListener("click", setGiscusTheme);
+            themeSwitcher.addEventListener("click", () => {
+                setGiscusTheme();
+                setTelegramTheme();
+            });
         }
     });
 </script>
