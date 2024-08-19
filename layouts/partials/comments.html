@@ -6,7 +6,7 @@
     </div>
 
     <div id="giscus-comments" class="comment-box"></div>
-    <div id="telegram-discussion" class="comment-box" style="display: none; min-height: 186.2px;"></div>
+    <div id="telegram-discussion" class="comment-box"></div>
 
 </div>
 
@@ -17,6 +17,11 @@
         margin-top: 50px;
         margin-bottom: 10px;
         gap: 10px;
+    }
+
+    #telegram-discussion {
+        display: none;
+        min-height: 186.2px;
     }
 
     .comment-toggle-buttons button {
@@ -41,6 +46,8 @@
 </style>
 
 <script>
+    let telegramLoaded = false;
+
     function showGiscus() {
         document.getElementById('show-giscus').classList.add('active');
         document.getElementById('show-telegram').classList.remove('active');
@@ -54,7 +61,10 @@
         document.getElementById('show-telegram').classList.add('active');
         document.getElementById('giscus-comments').style.display = 'none';
         document.getElementById('telegram-discussion').style.display = 'block';
-        setTelegramTheme();
+        if (!telegramLoaded) {
+            loadTelegramWidget();
+            telegramLoaded = true;
+        }
     }
 
     const getStoredTheme = () => localStorage.getItem("pref-theme") === "dark" ? "dark" : "light";
@@ -110,7 +120,10 @@
         giscusScript.defer = true;
         document.querySelector("#giscus-comments").appendChild(giscusScript);
 
-        loadTelegramWidget();
+        if (document.getElementById('telegram-discussion').style.display === 'block') {
+            loadTelegramWidget();
+            telegramLoaded = true;
+        }
 
         const themeSwitcher = document.querySelector("#theme-toggle");
         if (themeSwitcher) {
