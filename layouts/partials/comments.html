@@ -1,14 +1,10 @@
-<div class="comments-section">
-
-    <div class="comment-toggle-buttons">
-        <button id="show-giscus" class="active" onclick="showGiscus()">Giscus Comments</button>
-        <button id="show-telegram" onclick="showTelegram()">Telegram Discussion</button>
-    </div>
-
-    <div id="giscus-comments" class="comment-box"></div>
-    <div id="telegram-discussion" class="comment-box"></div>
-
+<div class="comment-toggle-buttons">
+    <button id="show-giscus" class="active" onclick="showGiscus()">Giscus Comments</button>
+    <button id="show-telegram" onclick="showTelegram()">Telegram Discussion</button>
 </div>
+
+<div id="giscus-comments" class="comment-box"></div>
+<div id="telegram-discussion" class="comment-box"></div>
 
 <style>
     .comment-toggle-buttons {
@@ -20,8 +16,8 @@
     }
 
     #telegram-discussion {
-        display: none;
         min-height: 186.2px;
+        display: none;
     }
 
     .comment-toggle-buttons button {
@@ -110,7 +106,6 @@
             "data-input-position": "top",
             "data-theme": getStoredTheme() === 'dark' ? 'noborder_dark' : 'noborder_light',
             "data-lang": "zh-CN",
-            "data-loading": "lazy",
             "crossorigin": "anonymous",
         };
 
