@@ -165,7 +165,7 @@ Google的PageSpeed Insights报告中展示了四大维度的指标：`FCP`、`LC
 
 接着，去到所用主题路径下的`layouts/_default`，复制其中的`single.html`至站点目录下的`layouts/_default`。PaperMod主题所提供的`single.html`有关封面渲染的代码为`{{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}`，将`cover.html`替换为`inner_cover.html`，至此，Hugo在渲染文章时，会将`inner_cover.html`的设定应用到文章详情页封面。
 
-上面的解耦操作参考了[Hugo博客文章封面图片缩小并移到侧边 | PaperMod主题 | Sulv's Blog](https://www.sulvblog.cn/posts/blog/img_right/#3-%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81),相关操作也可参阅这篇文章。这篇文章提到
+上面的解耦操作参考了[Hugo博客文章封面图片缩小并移到侧边 | PaperMod主题 | Sulv's Blog](https://www.sulvblog.cn/posts/blog/img_right/#3-%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81)，相关操作也可参阅这篇文章。这篇文章提到
 >把cover1.html文件里的`<figure class="entry-cover">`修改为`<figure class="entry-cover1">`
 
 但是，在我进行了如上操作后，文章内封面的圆角消失，似乎这个操作影响文章内封面的样式。本着“如无必要，勿增实体”的奥卡姆剃刀精神，我选择不进行修改。经快速测试，不进行如上操作并未带来可见的负面效果。

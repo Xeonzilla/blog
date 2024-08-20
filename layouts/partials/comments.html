@@ -1,10 +1,10 @@
 <div class="comment-toggle-buttons">
-    <button id="show-giscus" class="active" onclick="showGiscus()">Giscus Comments</button>
-    <button id="show-telegram" onclick="showTelegram()">Telegram Discussion</button>
+    <button id="show-giscus" class="active" onclick="showGiscus()">Github Discussions</button>
+    <button id="show-telegram" onclick="showTelegram()">Telegram Comments</button>
 </div>
 
-<div id="giscus-comments" class="comment-box"></div>
-<div id="telegram-discussion" class="comment-box"></div>
+<div id="github-discussions" class="comment-box"></div>
+<div id="telegram-comments" class="comment-box"></div>
 
 <style>
     .comment-toggle-buttons {
@@ -15,8 +15,8 @@
         gap: 10px;
     }
 
-    #telegram-discussion {
-        min-height: 186.2px;
+    #telegram-comments {
+        min-height: 378.2px;
         display: none;
     }
 
@@ -47,16 +47,16 @@
     function showGiscus() {
         document.getElementById('show-giscus').classList.add('active');
         document.getElementById('show-telegram').classList.remove('active');
-        document.getElementById('giscus-comments').style.display = 'block';
-        document.getElementById('telegram-discussion').style.display = 'none';
+        document.getElementById('github-discussions').style.display = 'block';
+        document.getElementById('telegram-comments').style.display = 'none';
         setGiscusTheme();
     }
 
     function showTelegram() {
         document.getElementById('show-giscus').classList.remove('active');
         document.getElementById('show-telegram').classList.add('active');
-        document.getElementById('giscus-comments').style.display = 'none';
-        document.getElementById('telegram-discussion').style.display = 'block';
+        document.getElementById('github-discussions').style.display = 'none';
+        document.getElementById('telegram-comments').style.display = 'block';
         if (!telegramLoaded) {
             loadTelegramWidget();
             telegramLoaded = true;
@@ -76,13 +76,15 @@
     };
 
     const loadTelegramWidget = () => {
-        const telegramDiv = document.getElementById('telegram-discussion');
+        const telegramDiv = document.getElementById('telegram-comments');
         telegramDiv.innerHTML = "";
         const telegramScript = document.createElement("script");
-        telegramScript.src = "https://telegram.org/js/telegram-widget.js?22";
+        telegramScript.src = "https://comments.app/js/widget.js?3";
         telegramScript.defer = true;
-        telegramScript.setAttribute("data-telegram-discussion", "XeonAnimeLog");
-        telegramScript.setAttribute("data-comments-limit", "50");
+        telegramScript.setAttribute("data-comments-app-website", "i7gjmkOw");
+        telegramScript.setAttribute("data-limit", "100");
+        telegramScript.setAttribute("data-height", "371");
+        telegramScript.setAttribute("data-dislikes", "1");
         telegramScript.setAttribute("data-colorful", "1");
         telegramScript.setAttribute("data-dark", getStoredTheme() === "dark" ? "1" : "0");
         telegramDiv.appendChild(telegramScript);
@@ -113,9 +115,9 @@
         Object.entries(giscusAttributes).forEach(
             ([key, value]) => giscusScript.setAttribute(key, value));
         giscusScript.defer = true;
-        document.querySelector("#giscus-comments").appendChild(giscusScript);
+        document.querySelector("#github-discussions").appendChild(giscusScript);
 
-        if (document.getElementById('telegram-discussion').style.display === 'block') {
+        if (document.getElementById('telegram-comments').style.display === 'block') {
             loadTelegramWidget();
             telegramLoaded = true;
         }
