@@ -21,7 +21,7 @@ Google的PageSpeed Insights报告中展示了四大维度的指标：`FCP`、`LC
 >
 >当以异步方式加载资源，或将 DOM 元素动态添加到网页中的现有内容之前时，通常会发生网页内容意外移动。导致布局偏移的原因可能包括尺寸未知的图片或视频、呈现的字体大于或小于其初始后备尺寸，或者是会自行动态调整大小的第三方广告或微件。
 
-简单来说，CLS是网站设计时应该避免的问题。在Hugo中，一般需要利用[利用响应式图片（Responsive images）](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)、[页面束（Page bundles）](https://gohugo.io/content-management/page-bundles/)、[图像渲染挂钩（Image render hooks）](https://gohugo.io/render-hooks/images/)和[图像处理（Image processing）](https://gohugo.io/content-management/image-processing/)等工具或处理方法。
+简单来说，CLS是网站设计时应该避免的问题。在Hugo中，一般需要利用利用响应式图片（Responsive images）[^1]、页面束（Page bundles）[^2]、图像渲染挂钩（Image render hooks）[^3]和图像处理（Image processing）[^4]等工具或处理方法。
 
 在我的“伪解决方案”中，主要借助了HTML和CSS的特性，不依赖于Hugo的图像处理。
 
@@ -274,8 +274,15 @@ Hugo的Github仓库中有一个2020年创建的Issue：[Add image processing sup
 AVIF的压缩性能过于强大，以至于质量为20的WebP需要和同样大小、质量为50的AVIF做比较。在AVIF面前的WebP显得过于”不现代、不先进“。经过时间积累，现代浏览器对AVIF的支持情况已经相当完善了，我认为现在使用AVIF，百利而无一害。
 
 ## Zola初探
-作为静态站点生成器的新星，Zola是我预定的下一个所使用的框架。在遇到Hugo与AVIF的问题时，我也去了解了一番Zola对于AVIF的支持情况，毕竟如果AVIF的痛点在Hugo无法解决，可以通过迁移站点到新的框架根除。
+作为静态站点生成器的新星，Zola[^5]是我预定的下一个所使用的框架。在遇到Hugo与AVIF的问题时，我也去了解了一番Zola对于AVIF的支持情况，毕竟如果AVIF的痛点在Hugo无法解决，可以通过迁移站点到新的框架根除。
 
-令我大跌眼镜的是，Zola作为使用Rust编写的静态站点生成器，竟然也不支持处理AVIF。Hugo不支持AVIF是在等待一个以Go编写的AVIF解码器/编码器，而Rust早已拥有了一个AVIF编码器[rav1e](https://github.com/xiph/rav1e)，只能怪开发者们对现代图片格式的支持不太上心了。
+令我大跌眼镜的是，Zola作为使用Rust编写的静态站点生成器，竟然也不支持处理AVIF。Hugo不支持AVIF是在等待一个以Go编写的AVIF解码器/编码器，而Rust早已拥有了一个AVIF编码器rav1e[^6]，只能怪开发者们对现代图片格式的支持不太上心了。
 
 另外，Zola的生态相比Hugo也太过贫瘠。在Zola官方网站的主题页中，我似乎找不到一个包含文章封面、搜索和目录等功能的高度可用的主题，作为新事物，这是无可避免的情况。看来想要体验Zola，还需要社区的成长和时间的沉淀。
+
+[^1]:[响应式图片 - 学习 Web 开发 | MDN](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+[^2]:[Page bundles | Hugo](https://gohugo.io/content-management/page-bundles/)
+[^3]:[Image render hooks | Hugo](https://gohugo.io/render-hooks/images/)
+[^4]:[Image processing | Hugo](https://gohugo.io/content-management/image-processing/)
+[^5]:[Zola](https://www.getzola.org/)
+[^6]:[xiph/rav1e: The fastest and safest AV1 encoder.](https://github.com/xiph/rav1e)
