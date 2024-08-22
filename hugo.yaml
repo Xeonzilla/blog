@@ -1,12 +1,13 @@
 baseURL: https://xeonzilla.github.io
 title: Xeonzilla's Note
+paginate: 5
 theme: PaperMod
 defaultContentLanguage: zh
-hasCJKLanguage: true
+enableInlineShortcodes: true
 enableRobotsTXT: true
 enableEmoji: true
-enableInlineShortcodes: true #允许内联短码
-paginate: 5 # 每页显示的文章数
+hasCJKLanguage: true
+buildFuture: true
 
 taxonomies:
   tag: tags
@@ -21,29 +22,41 @@ outputs:
 params:
   env: production
   since: 2024
-  search: true
   author: Xeonzilla
-  description: Xeonzilla的笔记, 动画观后感, 技术相关记录
+  description: 用一个可以永远存活在互联网上的档案，记录我的琐碎灵感与思考
+  keywords: 
+    - Xeonzilla的笔记
+    - 动画观后感
+    - 技术记录
   dateFormat: 01-02, 2006
-  homeFullContent: false # 主页显示全部文章内容
-  ShowToc: true # 显示目录
-  TocOpen: true # 自动展开目录
-  ShowCodeCopyButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true # 显示面包屑导航
+  defaultTheme: auto
+  homeFullContent: false
+  ShowToc: true
+  TocOpen: true
   ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   comments: true
-  defaultTheme: auto
-  ShowShareButtons: true
-  ShareButtons:
-    - x
-    - facebook
-    - whatsapp
-    - telegram
+  search: true
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: true
+    favicon: /assets/favicon.ico
+    favicon16x16: /assets/favicon-16x16.png
+    favicon32x32: /assets/favicon-32x32.png
+    apple_touch_icon: /assets/apple-touch-icon.png
+
+  label:
+    icon: /assets/apple-touch-icon.png
+
   homeInfoParams:
     Title: 欢迎👋 这里是Xeonzilla的笔记
     Content: ”用一个可以永远存活在互联网上的档案，记录我的琐碎灵感与思考“
+
   socialIcons:
     - name: Telegram
       url: https://t.me/Xeonzilla
@@ -53,25 +66,27 @@ params:
       url: https://github.com/Xeonzilla/Xeonzilla.github.io
     - name: RSS
       url: index.xml
+
   cover:
     responsiveImages: false
     linkFullImages: true
+
   fuseOpts:
-    distance: 1000 # 最大搜索距离
-    threshold: 0.4 # 阈值控制匹配的敏感度
-    minMatchCharLength: 0 # 最小匹配字符长度
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
     keys:
       - title
       - permalink
       - summary
       - content
-  assets:
-    disableFingerprinting: true
-    favicon: /assets/favicon.ico
-    favicon16x16: /assets/favicon-16x16.png
-    favicon32x32: /assets/favicon-32x32.png
-    apple_touch_icon: /assets/apple-touch-icon.png
 
+  ShareButtons:
+    - x
+    - facebook
+    - whatsapp
+    - telegram
+    
 menus:
   main:
     - identifier: search
@@ -93,16 +108,16 @@ menus:
 
 markup:
   highlight:
-    codeFences: true # 代码围栏功能
+    codeFences: true
     guessSyntax: true
-    lineNos: true # 显示行号
-    style: github-dark
-    lineNumbersInTable: true # 使用表来格式化行号和代码,而不是标签
+    lineNos: true
+    style: hrdark
+    lineNumbersInTable: true
   goldmark:
     renderer:
       unsafe: true
       xhtml: true
-      
+
 sitemap:
   changefreq: weekly
   filename: sitemap.xml

@@ -43,15 +43,15 @@
   {{- end }}
 
   <footer class="post-footer">
-    <div class="post-meta">
+    <div class="post-taxonomies">
+      {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
       <ul class="post-tags">
-        {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         {{- range ($.GetTerms $tags) }}
         <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{- end }}
-      </ul>    
+      </ul>
+      {{- $series := .Language.Params.Taxonomies.series | default "series" }}
       <ul class="post-series">
-        {{- $series := .Language.Params.Taxonomies.series | default "series" }}
         {{- range ($.GetTerms $series) }}
         <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{- end }}
