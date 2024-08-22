@@ -1,7 +1,7 @@
 ---
 title: Comments Widget的自动主题和双评论系统
 slug: auto_theme_comments_system_with_comments_widget
-date: 2024-08-20T13:58:00+08:00
+date: 2024-08-20T22:54:00+08:00
 tags: 
   - 技术
   - Hugo
@@ -36,7 +36,6 @@ tags:
     }
 
     #telegram-comments {
-        border-radius: var(--radius);
         min-height: 378.2px;
         display: none;
     }
@@ -171,7 +170,6 @@ tags:
 
 <style>
     #telegram-comments {
-        border-radius: var(--radius);
         min-height: 378.2px;
         display: none;
     }

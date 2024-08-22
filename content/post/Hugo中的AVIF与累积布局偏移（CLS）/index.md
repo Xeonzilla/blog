@@ -3,9 +3,6 @@ title: Hugo中的AVIF与累积布局偏移（CLS）
 slug: hugo_avif_cls
 date: 2024-07-31T13:58:00+08:00
 Lastmod: 2024-08-14T22:39:00+08:00
-cover:
-  image: 404.html
-  alt: 未设置封面以展示占位效果 | 欢迎👋 这里是Xeonzilla的笔记
 tags: 
   - 技术
   - Hugo
