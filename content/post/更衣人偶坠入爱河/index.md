@@ -1,6 +1,6 @@
 ---
 title: 更衣人偶坠入爱河
-slug: sono_bisque_doll_wa_koi_o_suru
+slug: bisque_koi
 date: 2023-12-06T00:49:00+08:00
 cover:
   image: 01.avif

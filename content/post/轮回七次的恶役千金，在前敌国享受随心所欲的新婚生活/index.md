@@ -1,6 +1,6 @@
 ---
 title: 轮回七次的恶役千金，在前敌国享受随心所欲的新婚生活
-slug: loop_7-kaime_no_akuyaku_reijou_wa_moto_tekikoku_de_jiyuu_kimama_na_hanayome_seikatsu_wo_mankitsu_suru
+slug: loopnana
 date: 2024-03-11T00:00:00+08:00
 Lastmod: 2024-07-27T15:54:00+08:00
 cover:
