@@ -1,0 +1,48 @@
+theme = "blowfish"
+baseURL = "https://xeonzilla.github.io/"
+defaultContentLanguage = "zh-cn"
+pluralizeListTitles = true
+hasCJKLanguage = true
+enableRobotsTXT = true
+summaryLength = 100
+buildFuture = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 12
+
+[imaging]
+  anchor = "Center"
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  threshold = 0
+  includeNewer = true
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "series"
+        weight = 80
+
+    [[related.indices]]
+        name = "date"
+        weight = 20
+
+    [[related.indices]]
+      applyFilter = false
+      name = "fragmentrefs"
+      type = "fragments"
+      weight = 10

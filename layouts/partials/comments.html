@@ -1,43 +1,20 @@
-<div class="comment-toggle-buttons">
-    <button id="show-giscus" class="active" onclick="showGiscus()">Github Discussions</button>
-    <button id="show-telegram" onclick="showTelegram()">Telegram Comments</button>
+<div id="comment-toggle-buttons" class="flex flex-row justify-center">
+    <button id="show-giscus"
+        class="text-neutral-700 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 active"
+        onclick="showGiscus()">Github Discussions</button>
+    <button id="show-telegram"
+        class="text-neutral-700 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400"
+        onclick="showTelegram()">Telegram Comments</button>
 </div>
 
-<div id="github-discussions" class="comment-box"></div>
-<div id="telegram-comments" class="comment-box"></div>
+<div id="github-discussions" class="flex"></div>
+<div id="telegram-comments" class="flex"></div>
 
 <style>
-    .comment-toggle-buttons {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 10px;
-        gap: 10px;
-    }
-
-    #telegram-comments {
-        min-height: 378.2px;
-        display: none;
-    }
-
-    .comment-toggle-buttons button {
-        display: block;
-        padding: 0 14px;
-        color: var(--primary);
-        font-size: 14px;
-        line-height: 34px;
-        background: var(--code-bg);
-        border-radius: var(--radius);
-        border: 1px solid var(--border);
-    }
-
-    .comment-toggle-buttons button:hover {
-        background: var(--border);
-    }
-
-    .comment-toggle-buttons button.active {
-        pointer-events: none;
-        background-color: transparent;
+    #comment-toggle-buttons {
+        gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 </style>
 
@@ -63,7 +40,7 @@
         }
     }
 
-    const getStoredTheme = () => localStorage.getItem("pref-theme") === "dark" ? "dark" : "light";
+    const isDarkMode = () => document.documentElement.classList.contains('dark');
 
     const setGiscusTheme = () => {
         const sendMessage = (message) => {
@@ -72,7 +49,7 @@
                 iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
             }
         };
-        sendMessage({ setConfig: { theme: getStoredTheme() === 'dark' ? 'noborder_dark' : 'noborder_light' } });
+        sendMessage({ setConfig: { theme: isDarkMode() ? 'noborder_dark' : 'noborder_light' } });
     };
 
     const loadTelegramWidget = () => {
@@ -86,13 +63,31 @@
         telegramScript.setAttribute("data-height", "371");
         telegramScript.setAttribute("data-dislikes", "1");
         telegramScript.setAttribute("data-colorful", "1");
-        telegramScript.setAttribute("data-dark", getStoredTheme() === "dark" ? "1" : "0");
+        telegramScript.setAttribute("data-dark", isDarkMode() ? "1" : "0");
         telegramDiv.appendChild(telegramScript);
     };
 
     const setTelegramTheme = () => {
-        loadTelegramWidget();
+        if (document.getElementById('telegram-comments').style.display === 'block') {
+            loadTelegramWidget();
+        }
     };
+
+    const observer = new MutationObserver((mutationsList) => {
+        mutationsList.forEach(mutation => {
+            if (mutation.attributeName === 'class') {
+                if (isDarkMode()) {
+                    setGiscusTheme();
+                    setTelegramTheme();
+                } else {
+                    setGiscusTheme();
+                    setTelegramTheme();
+                }
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
 
     document.addEventListener("DOMContentLoaded", () => {
         const giscusAttributes = {
@@ -103,10 +98,10 @@
             "data-category-id": "DIC_kwDOL6BvNc4Cfb8m",
             "data-mapping": "pathname",
             "data-strict": "1",
-            "data-reactions-enabled": "1",
+            "data-reactions-actived": "1",
             "data-emit-metadata": "0",
             "data-input-position": "top",
-            "data-theme": getStoredTheme() === 'dark' ? 'noborder_dark' : 'noborder_light',
+            "data-theme": isDarkMode() ? 'noborder_dark' : 'noborder_light',
             "data-lang": "zh-CN",
             "crossorigin": "anonymous",
         };
@@ -120,14 +115,6 @@
         if (document.getElementById('telegram-comments').style.display === 'block') {
             loadTelegramWidget();
             telegramLoaded = true;
-        }
-
-        const themeSwitcher = document.querySelector("#theme-toggle");
-        if (themeSwitcher) {
-            themeSwitcher.addEventListener("click", () => {
-                setGiscusTheme();
-                setTelegramTheme();
-            });
         }
     });
 </script>

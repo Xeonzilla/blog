@@ -1,0 +1,8 @@
+article:
+  part_of_series: "这篇文章属于一个系列"
+
+error:
+  404_description: "您请求的页面似乎不存在"
+
+list:
+  no_articles: "这里还没有任何文章可以列出"

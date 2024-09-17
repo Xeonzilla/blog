@@ -1,11 +1,12 @@
----
-title: 关于
-author: " "
-ShowBreadCrumbs: false
-ShowReadingTime: false
-ShowWordCount: false
----
-
++++
+title = "关于"
+showDate = false
+showAuthor = false
+ShowBreadCrumbs = false
+ShowReadingTime = false
+ShowWordCount = false
+showZenMode = false
++++
 这里是Xeonzilla的笔记，由[Github Pages](https://pages.github.com)强力驱动的博客。
 
 一开始，我在Telegram上建立了一个公开频道，名为[Xeon的Anime观察日志](https://t.me/XeonAnimeLog)，用来发布动画的观后感。这里引用当初的想法：

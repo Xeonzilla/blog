@@ -1,12 +1,10 @@
----
-title: Hugo中的AVIF与累积布局偏移（CLS）
-slug: hugo_avif_cls
-date: 2024-07-31T13:58:00+08:00
-Lastmod: 2024-08-14T22:39:00+08:00
-tags: 
-  - 技术
-  - Hugo
----
++++
+title = "Hugo中的AVIF与累积布局偏移（CLS）"
+slug = "hugo_avif_cls"
+date = "2024-07-31T13:58:00+08:00"
+lastmod = "2024-08-14T22:39:00+08:00"
+tags = ["技术", "Hugo", "PaperMod"]
++++
 ## CLS的伪解决方案
 ### 何谓CLS
 Google的PageSpeed Insights报告中展示了四大维度的指标：`FCP`、`LCP`、`TBT`、`CLS`。其中，CLS是指Cumulative Layout Shift，即累积布局偏移。

@@ -1,0 +1,73 @@
+defaultAppearance = "dark"
+enableSearch = true
+enableCodeCopy = true
+mainSections = ["post"]
+disableImageOptimization = true
+defaultBackgroundImage = "/image/defaultBackgroundImage.avif"
+defaultFeaturedImage = "/image/defaultFeaturedImage.jpg"
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+
+[header]
+  layout = "fixed"
+  
+[footer]
+  showAppearanceSwitcher = true
+
+[homepage]
+  layout = "background"
+  homepageImage = "/image/defaultBackgroundImage.avif"
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = "/post/"
+  cardView = true
+  layoutBackgroundBlur = true
+
+[article]
+  showDateUpdated = true
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  invertPagination = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showWordCount = true
+  showComments = true
+  sharingLinks = [ "twitter", "reddit", "facebook", "email", "whatsapp", "telegram"]
+  showZenMode = true
+
+[list]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  showCards = true
+  cardView = true
+  constrainItemsWidth = true
+
+[sitemap]
+  excludedKinds = ["taxonomy"]
+
+[taxonomy]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  cardView = true
+
+[term]
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showTableOfContents = true
+  groupByYear = true
+  cardView = true
+
+[verification]
+  google = "ZMPkOyFD0j8QvFC2ZYLJqU9pZYMfda8VtXdYl-isr94"

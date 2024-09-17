@@ -1,4 +1,4 @@
----
-title: Hugo
-url: /search/tags/hugo
----
++++
+title = "Hugo"
+url = "/tags/hugo"
++++
