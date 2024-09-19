@@ -80,9 +80,7 @@
     };
 
     const setTelegramTheme = () => {
-        if (document.getElementById('telegram-comments').style.display === 'block') {
-            loadTelegramWidget();
-        }
+        loadTelegramWidget();
     };
 
     const observer = new MutationObserver((mutationsList) => {
@@ -97,6 +95,9 @@
     observer.observe(document.documentElement, { attributes: true });
 
     document.addEventListener("DOMContentLoaded", () => {
+        setGiscusTheme();
+        setTelegramTheme();
+
         const giscusAttributes = {
             "src": "https://giscus.app/client.js",
             "data-repo": "Xeonzilla/Xeonzilla.github.io",
