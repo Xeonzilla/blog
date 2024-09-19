@@ -1,8 +1,8 @@
 <div id="comment-toggle-buttons" class="flex flex-row justify-center">
-    <button id="show-giscus"
+    <button id="show-giscus" aria-selected="true"
         class="text-neutral-700 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 active"
         onclick="showGiscus()">Github Discussions</button>
-    <button id="show-telegram"
+    <button id="show-telegram" aria-selected="false"
         class="text-neutral-700 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400"
         onclick="showTelegram()">Telegram Comments</button>
 </div>
@@ -13,8 +13,16 @@
 <style>
     #comment-toggle-buttons {
         gap: 40px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+        margin: 40px 0 20px;
+    }
+
+    #github-discussions {
+        min-height: 370.6px;
+    }
+
+    #telegram-comments {
+        min-height: 370.6px;
+        display: none;
     }
 </style>
 
@@ -23,17 +31,21 @@
 
     function showGiscus() {
         document.getElementById('show-giscus').classList.add('active');
-        document.getElementById('show-telegram').classList.remove('active');
+        document.getElementById('show-giscus').setAttribute('aria-selected', 'true');
         document.getElementById('github-discussions').style.display = 'block';
+        document.getElementById('show-telegram').classList.remove('active');
+        document.getElementById('show-telegram').setAttribute('aria-selected', 'false');
         document.getElementById('telegram-comments').style.display = 'none';
         setGiscusTheme();
     }
 
     function showTelegram() {
-        document.getElementById('show-giscus').classList.remove('active');
         document.getElementById('show-telegram').classList.add('active');
-        document.getElementById('github-discussions').style.display = 'none';
+        document.getElementById('show-telegram').setAttribute('aria-selected', 'true');
         document.getElementById('telegram-comments').style.display = 'block';
+        document.getElementById('show-giscus').classList.remove('active');
+        document.getElementById('show-giscus').setAttribute('aria-selected', 'false');
+        document.getElementById('github-discussions').style.display = 'none';
         if (!telegramLoaded) {
             loadTelegramWidget();
             telegramLoaded = true;
@@ -60,7 +72,7 @@
         telegramScript.defer = true;
         telegramScript.setAttribute("data-comments-app-website", "i7gjmkOw");
         telegramScript.setAttribute("data-limit", "100");
-        telegramScript.setAttribute("data-height", "371");
+        telegramScript.setAttribute("data-height", "370.6");
         telegramScript.setAttribute("data-dislikes", "1");
         telegramScript.setAttribute("data-colorful", "1");
         telegramScript.setAttribute("data-dark", isDarkMode() ? "1" : "0");
@@ -76,13 +88,8 @@
     const observer = new MutationObserver((mutationsList) => {
         mutationsList.forEach(mutation => {
             if (mutation.attributeName === 'class') {
-                if (isDarkMode()) {
-                    setGiscusTheme();
-                    setTelegramTheme();
-                } else {
-                    setGiscusTheme();
-                    setTelegramTheme();
-                }
+                setGiscusTheme();
+                setTelegramTheme();
             }
         });
     });
