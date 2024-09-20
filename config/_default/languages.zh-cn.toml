@@ -16,6 +16,7 @@ title = "Xeonzilla's Note"
   bio = "\"XEON Endorses Open-sourcing Nvidia\""
   links = [
     { email = "mailto:xeonrao01@gmail.com" },
-    { github = "https://github.com/xeonzilla" },
+    { github = "https://github.com/Xeonzilla/Xeonzilla.github.io" },
     { telegram = "https://t.me/xeonzilla" },
+    { rss-square = "https://xeonzilla.github.io/index.xml"}
   ]
