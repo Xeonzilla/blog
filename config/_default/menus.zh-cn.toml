@@ -1,36 +1,30 @@
 [[main]]
-  pre = "globe"
   name = "主页"
   pageRef = "/"
   weight = 1
 
 [[main]]
-  pre = "list"
   name = "分类"
   weight = 2
 
 [[main]]
-  pre = "tag"
   name = "标签"
   parent = "分类"
   pageRef = "tags"
   weight = 2
 
 [[main]]
-  pre = "substack"
   name = "系列"
   parent = "分类"
   pageRef = "series"
   weight = 2
 
 [[main]]
-  pre = "circle-info"
   name = "关于"
   pageRef = "about"
   weight = 3
 
 [[main]]
-  pre = "download"
   name = "归档"
   pageRef = "post"
   weight = 4

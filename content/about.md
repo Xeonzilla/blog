@@ -1,8 +1,9 @@
 +++
 title = "关于"
-showDate = false
 showAuthor = false
 ShowBreadCrumbs = false
+showDate = false
+showPagination = false
 ShowReadingTime = false
 ShowWordCount = false
 showZenMode = false
