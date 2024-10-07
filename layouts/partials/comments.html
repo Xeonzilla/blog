@@ -28,22 +28,49 @@
 
 <body>
     <div id="waline"></div>
-    <script type="module">
-        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-        init({
-            el: '#waline',
-            serverURL: 'https://xeonzilla-waline.netlify.app/.netlify/functions/comment',
-            emoji: false,
-            dark: 'html[class="scroll-smooth dark"]',
-            requiredMeta: ['nick'],
-            search: false,
-            pageview: true,
-            locale: {
-                placeholder: '填写昵称即可匿名评论\n亦可使用第三方账号登录'
-            }
-        });
-    </script>
     <time class="article-pageview">
         <span class="waline-pageview-count" data-path="{{.RelPermalink}}">0</span> 次浏览
     </time>
+    <script>
+        function loadWaline() {
+            import('https://unpkg.com/@waline/client@v3/dist/waline.js').then(({ init }) => {
+                init({
+                    el: '#waline',
+                    serverURL: 'https://xeonzilla-waline.netlify.app/.netlify/functions/comment',
+                    emoji: false,
+                    dark: 'html[class="scroll-smooth dark"]',
+                    requiredMeta: ['nick'],
+                    search: false,
+                    pageview: true,
+                    locale: {
+                        placeholder: '填写昵称即可匿名评论\n亦可使用第三方账号登录'
+                    }
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if ('IntersectionObserver' in window) {
+                let observer = new IntersectionObserver(loadComments, {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                });
+
+                let walineElement = document.getElementById('waline');
+                observer.observe(walineElement);
+            } else {
+                loadWaline();
+            }
+        });
+
+        function loadComments(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadWaline();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+    </script>
 </body>
