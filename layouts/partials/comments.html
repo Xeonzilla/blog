@@ -16,6 +16,14 @@
     .wl-editor {
         box-sizing: border-box;
     }
+
+    .article-pageview {
+        display: block;
+        text-align: end;
+        margin-top: -2%;
+        color: var(--waline-light-grey);
+        font-size: var(--waline-info-font-size);
+    }
 </style>
 
 <body>
@@ -29,9 +37,13 @@
             dark: 'html[class="scroll-smooth dark"]',
             requiredMeta: ['nick'],
             search: false,
+            pageview: true,
             locale: {
                 placeholder: '填写昵称即可匿名评论\n亦可使用第三方账号登录'
             }
         });
     </script>
+    <time class="article-pageview">
+        <span class="waline-pageview-count" data-path="{{.RelPermalink}}">0</span> 次浏览
+    </time>
 </body>
