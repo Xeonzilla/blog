@@ -33,6 +33,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   heroStyle = "background"
   showBreadcrumbs = true
   invertPagination = true
+  showReadingTime = false
   showTableOfContents = true
   showRelatedContent = true
   relatedContentLimit = 3
