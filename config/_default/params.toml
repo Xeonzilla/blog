@@ -3,8 +3,8 @@ enableSearch = true
 enableCodeCopy = true
 mainSections = ["post"]
 disableImageOptimization = true
-defaultBackgroundImage = "/image/defaultBackgroundImage.avif"
-defaultFeaturedImage = "/image/defaultFeaturedImage.avif"
+defaultBackgroundImage = "/img/defaultBackgroundImage.avif"
+defaultFeaturedImage = "/img/defaultFeaturedImage.avif"
 highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
@@ -19,7 +19,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [homepage]
   layout = "background"
-  homepageImage = "/image/defaultBackgroundImage.avif"
+  homepageImage = "/img/defaultBackgroundImage.avif"
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
