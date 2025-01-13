@@ -1,7 +1,7 @@
 defaultAppearance = "dark"
 enableSearch = true
 enableCodeCopy = true
-mainSections = ["post"]
+mainSections = ["posts"]
 disableImageOptimization = true
 defaultBackgroundImage = "/img/defaultBackgroundImage.avif"
 defaultFeaturedImage = "/img/defaultFeaturedImage.avif"
@@ -23,7 +23,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "/post/"
+  showMoreLinkDest = "/posts/"
   cardView = true
   layoutBackgroundBlur = true
 

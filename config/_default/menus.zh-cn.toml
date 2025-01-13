@@ -26,7 +26,7 @@
 
 [[main]]
   name = "归档"
-  pageRef = "post"
+  pageRef = "posts"
   weight = 4
 
 [[footer]]

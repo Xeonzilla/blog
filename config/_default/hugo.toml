@@ -46,3 +46,8 @@ enableEmoji = true
       name = "fragmentrefs"
       type = "fragments"
       weight = 10
+
+[permalinks]
+  [permalinks.page]
+    posts = "/post/:slug/"
+    collected_articles = "/collected_article/:slug/"
