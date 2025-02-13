@@ -45,9 +45,3 @@
   name = "系列"
   pageRef = "series"
   weight = 2
-
-[[footer]]
-  name = "开往-友链接力"
-  identifier = "Travelling"
-  url = "https://www.travellings.cn/go.html"
-  weight = 3
