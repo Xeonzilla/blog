@@ -30,11 +30,18 @@
   weight = 4
 
 [[main]]
+  identifier = "Travel"
+  pre = "planet"
+  title = "异次元之旅-跃迁"
+  url = "https://travel.moe/go.html?travel=on"
+  weight = "5"
+
+[[main]]
   identifier = "Travelling"
-  pre = "fa-train-subway"
+  pre = "train-subway"
   title = "开往-友链接力"
   url = "https://www.travellings.cn/go.html"
-  weight = "5"
+  weight = "6"
 
 [[footer]]
   name = "标签"
