@@ -39,8 +39,8 @@ series = ["TV动画 2025年1月"]
 
 当然，以上的推论是完全的臆想，因为只有绫奈由仁子知道她自己发的贴文代表着什么。如果她参与了创作，而「BanG Dream! Ave Mujica」还是惨淡收场，我无话可说，我们不能只在绫奈创作「BanG Dream! It's MyGO!!!!!」的时候才认可她。
 
-[^1]:[https://x.com/unicococ/status/1885234929971454372](https://x.com/unicococ/status/1885234929971454372)
+[^1]:<https://x.com/unicococ/status/1885234929971454372>
 
-[^2]:[https://x.com/unicococ/status/1885342245177745939](https://x.com/unicococ/status/1885342245177745939)
+[^2]:<https://x.com/unicococ/status/1885342245177745939>
 
 [^3]:[12话改编和S3小结 - 哔哩哔哩](https://www.bilibili.com/opus/946810933277098003)，或查看[转载备份](/collected_article/www.bilibili.com/opus/946810933277098003/)
