@@ -52,3 +52,9 @@
   name = "系列"
   pageRef = "series"
   weight = 2
+
+[[footer]]
+  name = "站点统计"
+  title = "Umami"
+  url = "https://xeonzilla-umami.netlify.app/share/HvFqJ6SpwnU2RYsw/xeonzilla.github.io"
+  weight = "3"
