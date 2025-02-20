@@ -13,10 +13,6 @@
         --waline-active-color: rgb(96, 165, 250);
     }
 
-    .wl-editor {
-        box-sizing: border-box;
-    }
-
     .article-pageview {
         display: block;
         text-align: end;
@@ -28,9 +24,6 @@
 
 <body>
     <div id="waline"></div>
-    <time class="article-pageview">
-        <span class="waline-pageview-count" data-path="{{.RelPermalink}}">0</span> 次浏览
-    </time>
     <script>
         function loadWaline() {
             import('https://unpkg.com/@waline/client@v3/dist/waline.js').then(({ init }) => {
@@ -42,7 +35,6 @@
                     dark: 'html[class="scroll-smooth dark"]',
                     requiredMeta: ['nick'],
                     search: false,
-                    pageview: true,
                     locale: {
                         placeholder: '填写昵称即可匿名评论\n亦可使用第三方账号登录'
                     }
