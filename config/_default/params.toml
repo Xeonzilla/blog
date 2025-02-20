@@ -70,5 +70,9 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   groupByYear = true
   cardView = true
 
+[umamiAnalytics]
+  websiteid = "6de88ea2-9a38-4253-b06c-c1b14db73769"
+  domain = "xeonzilla-umami.netlify.app"
+
 [verification]
   google = "ZMPkOyFD0j8QvFC2ZYLJqU9pZYMfda8VtXdYl-isr94"
