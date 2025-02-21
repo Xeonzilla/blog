@@ -71,7 +71,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   cardView = true
 
 [umamiAnalytics]
-  websiteid = "6de88ea2-9a38-4253-b06c-c1b14db73769"
+  websiteid = "fca0eb5e-f2b7-445c-8d08-eb863853a152"
   domain = "xeonzilla-monitoring.netlify.app"
   scriptName = "hugo-deploy"
 
