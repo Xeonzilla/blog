@@ -2,6 +2,7 @@
 title = "Netlify + Supabase部署Umami"
 slug = "netlify_supabase_umami"
 date = "2025-02-27T22:39:00+08:00"
+lastmod = "2025-02-28T19:27:00+08:00"
 tags = ["技术"]
 +++
 ## 起因
@@ -22,9 +23,8 @@ Managed databases的选择其实已经呼之欲出，因为在Umami文档提供�
 具体的部署过程不在此赘述，文档写得足够详细，我只记录部署中的一些小细节。
 
 1. Umami文档的一键部署按钮会自动创建你的Umami仓库，但是这个仓库没有与上游的fork关系。如果知道如何fork仓库，建议手动执行，保留fork关系便于后续的代码同步。
-2. Supabase在创建项目时，可以选择数据库的位置。Supabase没有中国大陆、香港或是台湾的节点，就近选择韩国、日本和新加坡均可。
-3. Supabase在数据库连接上，有`Direct connection`、`Transaction pooler`和`Session pooler`3种方式，对于Umami，应该选择`Session pooler`。
-4. Umami可以通过配置环境变量`TRACKER_SCRIPT_NAME`改变跟踪脚本的文件名以绕过屏蔽，但是我在Netlify上设置环境变量并不生效，原因未知。我们可以利用Netlify的Rewrites and proxies功能[^3]，在`netlify.toml`中添加如下代码，即可实现相同的效果。
+2. Supabase在数据库连接上，有`Direct connection`、`Transaction pooler`和`Session pooler`3种方式，对于Umami，应该选择`Session pooler`。
+3. Umami可以通过配置环境变量`TRACKER_SCRIPT_NAME`改变跟踪脚本的文件名以绕过屏蔽，但是我在Netlify上设置环境变量并不生效，原因未知。我们可以利用Netlify的Rewrites and proxies功能[^3]，在`netlify.toml`中添加如下代码，即可实现相同的效果。
     ```toml
     [[redirects]]
     from = "/hugo-deploy"
