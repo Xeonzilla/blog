@@ -23,7 +23,7 @@ Managed databases的选择其实已经呼之欲出，因为在Umami文档提供�
 
 1. Umami文档的一键部署按钮会自动创建你的Umami仓库，但是这个仓库没有与上游的fork关系。如果知道如何fork仓库，建议手动执行，保留fork关系便于后续的代码同步。
 2. Supabase在创建项目时，可以选择数据库的位置。Supabase没有中国大陆、香港或是台湾的节点，就近选择韩国、日本和新加坡均可。
-3. Supabase在数据库连接上，有`Direct connection`、`Transaction pooler`和`Session pooler`3种方式，对于Umami，应该选择`Transaction pooler`。
+3. Supabase在数据库连接上，有`Direct connection`、`Transaction pooler`和`Session pooler`3种方式，对于Umami，应该选择`Session pooler`。
 4. Umami可以通过配置环境变量`TRACKER_SCRIPT_NAME`改变跟踪脚本的文件名以绕过屏蔽，但是我在Netlify上设置环境变量并不生效，原因未知。我们可以利用Netlify的Rewrites and proxies功能[^3]，在`netlify.toml`中添加如下代码，即可实现相同的效果。
     ```toml
     [[redirects]]
@@ -42,7 +42,7 @@ Umami使用Supabase，而Waline使用LeanCloud，显得有些复杂，更多的�
 
 在LeanCloud导出的.csv有些错位，需要我手动调整数据。Supabase导出的.csv也会产生错位，这个问题大概率与平台无关，或许是文件格式的缺陷，又或者是我的打开方式有误。
 
-与Umami不同，Waline连接Supabase的数据库时，需要使用`Session pooler`的方式。`Direct connection`应该也可以连接，不过我没有尝试。
+与Umami不同，Waline连接Supabase的数据库时，需要使用`Transaction pooler`的方式。
 
 原本我开设评论区更多是为了好玩，没想到在我迁移的时候，看到了一位访客的3条留言。原来真的有人在看我写的文章，并且跟我互动，这种体验很奇妙。
 
