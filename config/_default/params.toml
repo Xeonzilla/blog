@@ -77,7 +77,6 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [selineAnalytics]
   token = "2dfcb493bcef4d6"
-  enableTrackEvent = false
 
 [verification]
   google = "ZMPkOyFD0j8QvFC2ZYLJqU9pZYMfda8VtXdYl-isr94"
