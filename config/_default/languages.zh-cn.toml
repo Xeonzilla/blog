@@ -11,12 +11,12 @@ title = "Xeonzilla's Note"
 
 [params.author]
   name = "Xeonzilla"
-  email = "xeonrao01@gmail.com"
+  email = "admin@xeonzilla.top"
   image = "/img/authors/Xeonzilla.webp"
   bio = "Yuri is life."
   links = [
-    { email = "mailto:xeonrao01@gmail.com" },
-    { github = "https://github.com/Xeonzilla/Xeonzilla.github.io" },
-    { telegram = "https://t.me/xeonzilla" },
+    { email = "mailto:admin@xeonzilla.top" },
+    { github = "https://github.com/Xeonzilla" },
+    { telegram = "https://t.me/xeonzilla_bot" },
     { rss-square = "https://xeonzilla.github.io/index.xml"}
   ]
