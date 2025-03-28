@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/img/:path*",
-      "destination": "https://blog-static.xeonzilla.top/img/:path*"
-    }
-  ]
-}

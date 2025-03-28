@@ -2,7 +2,7 @@
 title = "AI电子基因"
 slug = "ai_no_idenshi"
 date = "2025-03-16T00:24:00+08:00"
-featureimage = "https://xeonzilla.top/img/ai_no_idenshi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/ai_no_idenshi/feature.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年7月"]
 +++
@@ -20,7 +20,7 @@ series = ["TV动画 2023年7月"]
 ## 哲思之始
 相比于画面，「AI电子基因」的内容要丰富的多。本作善于发掘AI与人、仿生人与人之间的关系，再进一步衍生出有关人生、社会、科技等种种话题，动画带给我的剧情外的感想，要远比剧情本身更令我回味无穷。
 
-![脑机手术](https://xeonzilla.top/img/ai_no_idenshi/01.avif "脑机手术")
+![脑机手术](https://xeonzilla.top/api/r2?path=img/ai_no_idenshi/01.avif "脑机手术")
 
 如何处理这些问题？说实话我也不确定，即使我关注社会与科技的发展，也难以想象这一天真正到来。唯一可以确定的是，我坚定地支持技术的发展进步，恐惧没有到来的道德与社会问题、因噎废食，只能获得原地踏步的未来。
 
