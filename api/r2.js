@@ -16,7 +16,7 @@ export default async function handler(req, res) {
             }
 
             res.setHeader("Content-Type", response.headers.get("Content-Type"));
-            res.setHeader("Cache-Control", "public, max-age=86400, stale-while-revalidate=43200");
+            res.setHeader("Cache-Control", "public, immutable, max-age=604800, stale-while-revalidate=604800");
             const body = await response.arrayBuffer();
             res.send(Buffer.from(body));
         } catch (error) {
