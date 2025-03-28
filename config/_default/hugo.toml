@@ -51,3 +51,6 @@ enableEmoji = true
   [permalinks.page]
     posts = "/post/:slug/"
     collected_articles = "/collected_article/:slug/"
+
+[security.http]
+  mediaTypes = ['^image/avif$']

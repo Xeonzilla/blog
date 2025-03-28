@@ -2,6 +2,7 @@
 title = "AI电子基因"
 slug = "ai_no_idenshi"
 date = "2025-03-16T00:24:00+08:00"
+featureimage = "https://blog-static.xeonzilla.top/img/ai_no_idenshi/feature.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年7月"]
 +++
