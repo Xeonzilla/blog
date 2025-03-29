@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/hugo-deploy",
-        "destination": "https://umami.xeonzilla.top/hugo-deploy"
-      }
-    ]
-  }
