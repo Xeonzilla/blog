@@ -1,4 +1,12 @@
 export default async function handler(req, res) {
+    if (req.method === "OPTIONS") {
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS");
+        res.setHeader("Access-Control-Allow-Headers", "*");
+        res.status(204).end();
+        return;
+    }
+
     const country = req.headers["x-vercel-ip-country"] || "UNKNOWN";
     const r2Url = `https://blog-static.xeonzilla.top/${req.query.path}`;
 
@@ -7,7 +15,6 @@ export default async function handler(req, res) {
             const response = await fetch(r2Url, {
                 headers: {
                     "User-Agent": "Vercel-Proxy",
-                    "Origin": req.headers.origin || "",
                 },
             });
 
@@ -16,7 +23,7 @@ export default async function handler(req, res) {
             }
 
             res.setHeader("Content-Type", response.headers.get("Content-Type"));
-            res.setHeader("Cache-Control", "public, immutable, max-age=604800, stale-while-revalidate=604800");
+            res.setHeader("Cache-Control", "public, max-age=604800");
             res.setHeader("Access-Control-Allow-Origin", "*");
             res.setHeader("Access-Control-Allow-Methods", "GET, HEAD");
             res.setHeader("Access-Control-Allow-Headers", "Content-Type");
