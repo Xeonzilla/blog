@@ -17,12 +17,17 @@ export default async function handler(req, res) {
 
             res.setHeader("Content-Type", response.headers.get("Content-Type"));
             res.setHeader("Cache-Control", "public, immutable, max-age=604800, stale-while-revalidate=604800");
+            res.setHeader("Access-Control-Allow-Origin", "*");
+            res.setHeader("Access-Control-Allow-Methods", "GET, HEAD");
+            res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
             const body = await response.arrayBuffer();
             res.send(Buffer.from(body));
         } catch (error) {
             res.status(500).send(`Proxy error: ${error.message}`);
         }
     } else {
-        res.redirect(302, r2Url);
+        res.writeHead(302, { Location: r2Url });
+        res.end();
     }
 }
