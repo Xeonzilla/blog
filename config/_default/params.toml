@@ -70,11 +70,6 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   groupByYear = true
   cardView = true
 
-[umamiAnalytics]
-  websiteid = "a9306d22-3490-475f-b73d-bf4d1fd0387c"
-  domain = "umamizilla.netlify.app"
-  scriptName = "hugo-deploy"
-
 [selineAnalytics]
   token = "2dfcb493bcef4d6"
 
