@@ -2,6 +2,7 @@
 title = "更换博客评论系统：Waline"
 slug = "waline"
 date = "2024-10-07T11:34:00+08:00"
+featureimage = "https://xeonzilla.top/api/r2?path=img/waline/feature.avif"
 tags = ["技术", "Hugo", "Blowfish"]
 +++
 ## 契机
@@ -110,7 +111,7 @@ Waline的部署非常方便，而且官方文档[^1]也非常详尽，只需跟�
 ```
 在单独启动Waline测试的时候，Waline占据页面的全部宽度，此时文本框的位置正常。可能是Waline或Blowfish对宽度的设置和判断出现了问题。
 
-![文本框溢出](01.avif "文本框溢出")
+![文本框溢出](https://xeonzilla.top/api/r2?path=img/waline/01.avif "文本框溢出")
 
 Waline提供了浏览数统计功能，于是我们也可以跟随官方文档在代码中启用，为了让它能够和评论区融为一体，我们直接使用Waline预设的样式：
 ```css

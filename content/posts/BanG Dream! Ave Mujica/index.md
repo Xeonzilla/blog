@@ -1,6 +1,7 @@
 +++
 title = "BanG Dream! Ave Mujica"
 slug = "bang_dream_ave_mujica"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bang_dream_ave_mujica/feature.avif"
 date = "2025-02-02T20:38:00+08:00"
 tags = ["动画", "二次元"]
 series = ["TV动画 2025年1月"]
@@ -27,7 +28,7 @@ series = ["TV动画 2025年1月"]
 
 可怕的并不是主创出走，而是「BanG Dream! Ave Mujica」作为实际上「BanG Dream! It's MyGO!!!!!」的续集，留下了太多绫奈的遗产，如果不能将这些个人的设计利用起来，反而会贻害无穷。
 
-![另一个片场的MyGO!!!!!](01.avif "另一个片场的MyGO!!!!!")
+![另一个片场的MyGO!!!!!](https://xeonzilla.top/api/r2?path=img/bang_dream_ave_mujica/01.avif "另一个片场的MyGO!!!!!")
 
 目前看来，剧集的剧情错漏频出，许多假说也对此进行推测，尝试理解不合理剧情下的用意。如果没有绫奈由仁子，这些错误很可能只是单纯的错误，就像京吹3里，没有人知道悠风君大号君的正确用法，但又不敢贸然将它删去。
 

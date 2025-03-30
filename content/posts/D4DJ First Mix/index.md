@@ -2,6 +2,7 @@
 title = "D4DJ First Mix"
 slug = "d4dj_first_mix"
 date = "2025-03-22T18:44:00+08:00"
+featureimage = "https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/feature.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2020年10月"]
 +++
@@ -12,7 +13,7 @@ D4DJ作为Bushiroad推出的新一代多媒体企划，自然免不了与BanG Dr
 
 开心的氛围还体现在了各处的剧情上。相比于「BanG Dream!」和「少女☆歌剧 Revue Starlight」系列动画中展现出来的沉重、低气压，「D4DJ First Mix」在人际关系的方面要轻松许多。即使是铃玖与梦妮的不和，也只是朋友间的小别扭，一次敞开心扉就能够轻松化解。
 
-![可爱的头饰](01.avif "可爱的头饰")
+![可爱的头饰](https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/01.avif "可爱的头饰")
 
 没有了前辈企划们的争吵、泪水与诀别，Happy Around!就有了更多的时间，为观众呈现欢乐美好的高中生活。对于想要鉴赏美味关系性的饕餮，本作可能要令他们失望了；但是就我而言，回归阳光正面的故事，也是不错的。
 
@@ -25,7 +26,7 @@ D4DJ作为Bushiroad推出的新一代多媒体企划，自然免不了与BanG Dr
 
 「D4DJ First Mix」对于DJ的工作描写得很详细，一些最核心的工作，例如舞曲的衔接和Remix，都有介绍到，是很好的科普渠道。我觉得最重要的作用，就是让观众意识到，DJ是一种职业、是舞台上的一个人。
 
-![登台演出](02.avif "登台演出")
+![登台演出](https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/02.avif "登台演出")
 
 然而对于其他的VJ、键盘手、歌手和领舞职位，恕我学术不精，我没有丝毫的了解。
 
@@ -42,7 +43,7 @@ VJ是个独立的职位令我很惊奇，因为我一直以为，电音节上的
 
 总体而言，「D4DJ First Mix」的曲目都在有意贴合主流观众的喜好，没有出现过于小众、过于极端的曲风。甚至可以说，动画中出现的大部分歌曲，都是“电气化的流行音乐”。
 
-![Photon Maiden](03.avif "Photon Maiden")
+![Photon Maiden](https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/03.avif "Photon Maiden")
 
 就像「BanG Dream!」中的各支乐队有着风格上的不同，本作中的几个团体在曲风上也有自己的偏好。Peaky P-key走王道路线，以Electro House为主；Photon Maiden有空灵而科技的世界观，带给我的感觉接近Melody Dubstep或是Melody Bass；反而是我们的主角团Happy Around!风格最多变，用Future Bass概括有些勉强。
 
@@ -53,6 +54,6 @@ VJ是个独立的职位令我很惊奇，因为我一直以为，电音节上的
 
 Bushiroad的运营策略和万代、Cygames截然不同，当其他公司的企划想方设法地挖掘新人、塑造新偶像时，Bushiroad却在想办法让合作过的艺人二度登场，甚至不需要其所属响HiBiKi。就感性而言，我很喜欢这种运营的方式，充满了人情味和小圈子的气息，不像其他的偶像企划，用完即弃、卸磨杀驴。
 
-![两位主唱](04.avif "两位主唱")
+![两位主唱](https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/04.avif "两位主唱")
 
 动画角度，留给观众的声优梗也更多了。比如爱美饰演的山手响子，总能让我幻视户山香澄；渡月丽和白金燐子相同的大小姐人设，也能让人会心一笑。为什么我要在这个奇怪的时间节点观看「D4DJ First Mix」？也是为了接下来登场的Lyrical Lily，我已经迫不及待欣赏反田叶月、渡濑结月和进藤天音在另一个片场的表现了。

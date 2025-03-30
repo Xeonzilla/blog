@@ -2,6 +2,7 @@
 title = "Chroma Shift与RGB Shift"
 slug = "chroma_shift_and_rgb_shift"
 date = "2024-09-11T23:26:00+08:00"
+featureimage = "https://xeonzilla.top/api/r2?path=img/chroma_shift_and_rgb_shift/feature.avif"
 tags = ["动画", "二次元"]
 series = ["动画科学"]
 +++
@@ -9,7 +10,7 @@ series = ["动画科学"]
 Chroma Shift是一种动画视频画面的瑕疵，这里直接引用[[VCB-Studio 科普教程 6] 动漫视频常见的瑕疵/缺陷介绍](https://vcb-s.com/archives/4738)中色度偏移的部分：
 >色度偏移（chroma shift）
 >色度偏移，指的是色度平面相对亮度平面的错位，通常在极红/蓝/绿/紫处（这四个地方分别是U/V极大值或者极小值），线条多了一些重影（下图自制）：
->![Chroma Shift](01.avif "Chroma Shift")
+>![Chroma Shift](https://xeonzilla.top/api/r2?path=img/chroma_shift_and_rgb_shift/01.avif "Chroma Shift")
 >
 >上图是故意将UV左移两个像素。实际蓝光中鲜有这么大尺度的偏移，最多偏移一个像素，效果非常不明显；一般人很难观察到。
 >Chroma shift一般发生在数字图像处理中，不正确处理Chroma placement(Chroma相对Luma的位移)，造成的后果。修复手段通常叫做fix chroma shift。
@@ -21,7 +22,7 @@ Chroma Shift是一种动画视频画面的瑕疵，这里直接引用[[VCB-Studi
 
 最为新鲜而典型的例子就是由伏原茜担任摄影监督的「间谍过家家」、「别当欧尼酱了！」和[「葬送的芙莉莲」](/post/sousou_no_frieren/)，这几部动画的线条周围，都有着若隐若现的重影。
 
-![「别当欧尼酱了！」](02.avif "「别当欧尼酱了！」")
+![「别当欧尼酱了！」](https://xeonzilla.top/api/r2?path=img/chroma_shift_and_rgb_shift/02.avif "「别当欧尼酱了！」")
 
 定睛一看，这种症状似乎与Chroma Shift一致，这也是我对RGB Shift的第一印象：与Chroma Shift一样的画面缺陷，或者说，RGB Shift是Chroma Shift的别名？
 

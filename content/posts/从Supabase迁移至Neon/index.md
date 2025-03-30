@@ -1,6 +1,7 @@
 +++
 title = "从Supabase迁移至Neon"
 slug = "from_supabase_to_neon"
+featureimage = "https://xeonzilla.top/api/r2?path=img/from_supabase_to_neon/feature.avif"
 date = "2025-02-28T23:13:00+08:00"
 tags = ["技术"]
 +++
