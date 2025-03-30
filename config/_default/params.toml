@@ -13,7 +13,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [header]
   layout = "fixed"
-  
+
 [footer]
   showAppearanceSwitcher = true
 
