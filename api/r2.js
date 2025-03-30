@@ -15,9 +15,9 @@ export default async function handler(req, res) {
             }
 
             res.setHeader("Content-Type", response.headers.get("Content-Type"));
-            res.setHeader("Cache-Control", "public, max-age=604800");
+            res.setHeader("Cache-Control", "public, immutable, max-age=86400, s-maxage=604800");
             res.setHeader("Access-Control-Allow-Origin", "https://xeonzilla.top");
-            res.setHeader("Access-Control-Allow-Methods", "GET, HEAD");
+            res.setHeader("Access-Control-Allow-Methods", "GET, HEAD, POST");
             res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
             const body = await response.arrayBuffer();
