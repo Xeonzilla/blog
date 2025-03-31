@@ -1,3 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: /api/stats/
 Sitemap: https://xeonzilla.top/sitemap.xml

@@ -69,8 +69,3 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showTableOfContents = true
   groupByYear = true
   cardView = true
-
-[umamiAnalytics]
-  websiteid = "7ea39b32-a1e2-46f7-b882-eb50dedde52b"
-  domain = "umami.xeonzilla.top"
-  scriptName = "hugo-deploy"
