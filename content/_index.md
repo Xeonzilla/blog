@@ -1,5 +1,6 @@
 +++
 title = "主页"
+showHeadingAnchors = false
 +++
 # 欢迎👋 这里是Xeonzilla的笔记
 {{< lead >}}
