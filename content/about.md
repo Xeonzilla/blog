@@ -4,6 +4,7 @@ showAuthor = false
 ShowBreadCrumbs = false
 showDate = false
 showPagination = false
+showRelatedContent = false
 ShowWordCount = false
 showZenMode = false
 +++

@@ -34,14 +34,14 @@
   pre = "planet"
   title = "异次元之旅-跃迁"
   url = "https://travel.moe/go.html?travel=on"
-  weight = "5"
+  weight = 5
 
 [[main]]
   identifier = "Travelling"
   pre = "train-subway"
   title = "开往-友链接力"
   url = "https://www.travellings.cn/go.html"
-  weight = "6"
+  weight = 6
 
 [[footer]]
   name = "标签"
@@ -57,4 +57,4 @@
   name = "站点统计"
   title = "Umami"
   url = "https://umami.xeonzilla.top/share/0m0ZmSebCecM8NGM/xeonzilla.top"
-  weight = "3"
+  weight = 3
