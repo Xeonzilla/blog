@@ -37,12 +37,12 @@
   ],
   "rewrites": [
     {
-      "source": "/api/stats/:match*",
-      "destination": "https://umami.xeonzilla.top/:match*"
+      "source": "/api/stats/:path*",
+      "destination": "https://umami.xeonzilla.top/:path*"
     },
     {
-      "source": "/api/bangumi",
-      "destination": "https://bangumi.xeonzilla.top/api/vercel"
+      "source": "/api/bangumi/:path*",
+      "destination": "https://bangumi.xeonzilla.top/api/vercel/:path*"
     }
   ],
   "trailingSlash": false
