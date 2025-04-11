@@ -1,0 +1,37 @@
+<bilibili-bangumi api="https://xeonzilla.top/api/bangumi" bilibili-enabled="false"></bilibili-bangumi>
+
+<style>
+    bilibili-bangumi {
+        --bbc-text-base-color: rgb(51, 65, 85);
+        --bbc-label-color: rgb(96, 165, 250);
+        --bbc-primary-color: rgb(96, 165, 250);
+    }
+
+    bilibili-bangumi[dark] {
+        --bbc-text-base-color: rgb(203, 213, 225);
+        --bbc-label-color: rgb(37, 99, 235);
+        --bbc-primary-color: rgb(37, 99, 235);
+    }
+</style>
+
+<script type="module"
+    src="https://fastly.jsdelivr.net/npm/bilibili-bangumi-component@latest/dist/bilibili-bangumi-component/bilibili-bangumi-component.esm.js">
+    </script>
+
+<script>
+    const bangumi = document.querySelector('bilibili-bangumi');
+
+    function applyBangumiTheme() {
+        const isDark = document.documentElement.classList.contains('dark')
+        if (isDark) {
+            bangumi.setAttribute('dark', '');
+        } else {
+            bangumi.removeAttribute('dark');
+        }
+    }
+
+    applyBangumiTheme()
+
+    const observer = new MutationObserver(applyBangumiTheme)
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+</script>
