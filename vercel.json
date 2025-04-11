@@ -39,6 +39,10 @@
     {
       "source": "/api/stats/:path*",
       "destination": "https://umami.xeonzilla.top/:path*"
+    },
+    {
+      "source": "/api/bangumi/:path*",
+      "destination": "https://bangumi.xeonzilla.top/api/vercel/:path*"
     }
   ],
   "trailingSlash": false
