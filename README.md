@@ -1,6 +1,6 @@
 # Xeonzilla's Note
 
-![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/blog) ![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/waline) ![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/umami)
+![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/blog) ![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/waline) ![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/umami) ![Vercel](https://vercelbadge.vercel.app/api/Xeonzilla/bilibili-bangumi-component)
 
 **欢迎👋 这里是Xeonzilla的笔记**
 
