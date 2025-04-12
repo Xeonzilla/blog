@@ -18,5 +18,6 @@ title = "Xeonzilla's Note"
     { email = "mailto:admin@xeonzilla.top" },
     { github = "https://github.com/Xeonzilla" },
     { telegram = "https://t.me/xeonzilla_bot" },
+    { bangumi = "https://bgm.tv/user/xeonzilla"},
     { rss-square = "https://xeonzilla.top/index.xml"}
   ]
