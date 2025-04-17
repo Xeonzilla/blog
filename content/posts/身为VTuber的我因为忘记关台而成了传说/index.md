@@ -3,7 +3,7 @@ title = "身为VTuber的我因为忘记关台而成了传说"
 slug = "vtuber_legend"
 date = "2024-08-13T14:27:00+08:00"
 lastmod = "2024-09-23T13:55:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/vtuber_legend/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/vtuber_legend/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

@@ -3,7 +3,7 @@ title = "星灵感应"
 slug = "hoshitele"
 date = "2023-11-28T00:34:00+08:00"
 lastmod = "2024-07-27T21:12:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/hoshitele/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/hoshitele/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年10月"]
 +++

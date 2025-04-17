@@ -2,7 +2,7 @@
 title = "佐佐木与文鸟小哔"
 slug = "sasaki_to_pii-chan"
 date = "2024-04-16T22:24:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/sasaki_to_pii-chan/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/sasaki_to_pii-chan/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

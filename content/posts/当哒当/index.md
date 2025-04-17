@@ -2,7 +2,7 @@
 title = "当哒当"
 slug = "dandadan"
 date = "2024-12-31T23:39:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/dandadan/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/dandadan/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年10月"]
 +++

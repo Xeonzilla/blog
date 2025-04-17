@@ -1,7 +1,7 @@
 +++
 title = "建站小结"
 slug = "blog_summary"
-featureimage = "https://xeonzilla.top/api/r2?path=img/blog_summary/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/blog_summary/cover.avif"
 date = "2024-05-24T00:45:00+08:00"
 tags = ["技术", "Hugo"]
 +++

@@ -3,7 +3,7 @@ title = "孤独摇滚！"
 slug = "bocchi_the_rock"
 date = "2024-02-23T22:26:00+08:00"
 lastmod = "2025-02-21T21:16:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/bocchi_the_rock/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bocchi_the_rock/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2022年10月"]
 +++

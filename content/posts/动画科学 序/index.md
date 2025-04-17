@@ -2,7 +2,7 @@
 title = "动画科学 序"
 slug = "anime_science_preface"
 date = "2024-05-26T22:27:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/anime_science_preface/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/anime_science_preface/cover.avif"
 tags = ["动画", "二次元"]
 series = ["动画科学"]
 +++

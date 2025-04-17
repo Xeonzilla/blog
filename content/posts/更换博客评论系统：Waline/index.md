@@ -2,7 +2,7 @@
 title = "更换博客评论系统：Waline"
 slug = "waline"
 date = "2024-10-07T11:34:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/waline/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/waline/cover.avif"
 tags = ["技术", "Hugo", "Blowfish"]
 +++
 ## 契机

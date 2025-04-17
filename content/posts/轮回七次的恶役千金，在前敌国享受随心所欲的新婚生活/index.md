@@ -3,7 +3,7 @@ title = "轮回七次的恶役千金，在前敌国享受随心所欲的新婚�
 slug = "7th-timeloop"
 date = "2024-03-11T00:00:00+08:00"
 lastmod = "2024-07-27T15:54:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/7th-timeloop/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/7th-timeloop/cover.avif"
 tags = ["动画", "二次元"]
 series = "TV动画 2024年1月"
 +++

@@ -3,7 +3,7 @@ title = "公主殿下，“拷问”的时间到了"
 slug = "himesama_goumon"
 date = "2024-01-16T23:35:00+08:00"
 lastmod = "2024-07-27T13:20:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/himesama_goumon/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/himesama_goumon/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

@@ -2,7 +2,7 @@
 title = "末班列车去哪里？"
 slug = "shuumatsu_train"
 date = "2024-07-28T19:28:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/shuumatsu_train/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/shuumatsu_train/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

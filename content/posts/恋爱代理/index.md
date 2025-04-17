@@ -2,7 +2,7 @@
 title = "恋爱代理"
 slug = "renai_daikou"
 date = "2024-09-23T20:06:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/renai_daikou/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/renai_daikou/cover.avif"
 tags = ["漫画", "二次元"]
 +++
 ## 失效的”赤坂魔法“

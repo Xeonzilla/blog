@@ -2,7 +2,7 @@
 title = "你的颜色"
 slug = "kimi_no_iro"
 date = "2025-04-09T21:39:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/kimi_no_iro/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/kimi_no_iro/cover.avif"
 tags = ["动画", "二次元"]
 series = ["剧场版动画"]
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Summer Pockets"
 slug = "summer_pockets"
-featureimage = "https://xeonzilla.top/api/r2?path=img/summer_pockets/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/summer_pockets/cover.avif"
 date = "2024-10-31T21:14:00+08:00"
 tags = ["Galgame", "二次元"]
 +++

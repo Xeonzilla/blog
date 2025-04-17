@@ -3,7 +3,7 @@ title = "夜晚的水母不会游泳"
 slug = "yorukura"
 date = "2024-05-01T23:45:00+08:00"
 lastmod = "2024-06-23T23:10:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/yorukura/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/yorukura/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

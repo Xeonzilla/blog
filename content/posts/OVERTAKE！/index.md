@@ -2,7 +2,7 @@
 title = "OVERTAKE！"
 slug = "overtake"
 date = "2023-12-21T00:24:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/overtake/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/overtake/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年10月"]
 +++

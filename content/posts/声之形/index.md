@@ -3,7 +3,7 @@ title = "声之形"
 slug = "koe_no_katachi"
 date = "2023-12-13T01:33:00+08:00"
 lastmod = "2024-06-22T11:34:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/koe_no_katachi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/koe_no_katachi/cover.avif"
 tags = ["动画", "二次元"]
 series = ["剧场版动画"]
 +++

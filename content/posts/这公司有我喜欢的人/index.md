@@ -2,7 +2,7 @@
 title = "这公司有我喜欢的人"
 slug = "kaishani_sukinahito"
 date = "2025-02-07T22:59:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/kaishani_sukinahito/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/kaishani_sukinahito/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2025年1月"]
 +++

@@ -2,7 +2,7 @@
 title = "可爱史莱姆噗尼露"
 slug = "puniru_wa_kawaii_suraimu"
 date = "2024-12-14T23:28:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/puniru_wa_kawaii_suraimu/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/puniru_wa_kawaii_suraimu/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年10月"]
 +++

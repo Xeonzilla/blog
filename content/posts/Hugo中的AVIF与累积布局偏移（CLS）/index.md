@@ -1,7 +1,7 @@
 +++
 title = "Hugo中的AVIF与累积布局偏移（CLS）"
 slug = "hugo_avif_cls"
-featureimage = "https://xeonzilla.top/api/r2?path=img/hugo_avif_cls/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/hugo_avif_cls/cover.avif"
 date = "2024-07-31T13:58:00+08:00"
 lastmod = "2024-08-14T22:39:00+08:00"
 tags = ["技术", "Hugo", "PaperMod"]

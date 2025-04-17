@@ -2,7 +2,7 @@
 title = "D4DJ First Mix"
 slug = "d4dj_first_mix"
 date = "2025-03-22T18:44:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/d4dj_first_mix/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2020年10月"]
 +++

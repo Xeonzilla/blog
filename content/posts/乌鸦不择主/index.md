@@ -2,7 +2,7 @@
 title = "乌鸦不择主"
 slug = "karasu_aruji"
 date = "2024-05-31T23:41:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/karasu_aruji/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/karasu_aruji/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

@@ -2,7 +2,7 @@
 title = "Netlify + Supabase部署Umami"
 slug = "netlify_supabase_umami"
 date = "2025-02-27T22:39:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/netlify_supabase_umami/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/netlify_supabase_umami/cover.avif"
 lastmod = "2025-02-28T19:27:00+08:00"
 tags = ["技术"]
 +++

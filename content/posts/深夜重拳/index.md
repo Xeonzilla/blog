@@ -2,7 +2,7 @@
 title = "深夜重拳"
 slug = "mayopan"
 date = "2024-09-28T14:31:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/mayopan/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/mayopan/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

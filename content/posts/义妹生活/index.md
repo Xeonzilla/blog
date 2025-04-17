@@ -2,7 +2,7 @@
 title = "义妹生活"
 slug = "gimai_seikatsu"
 date = "2024-08-31T23:02:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/gimai_seikatsu/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/gimai_seikatsu/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

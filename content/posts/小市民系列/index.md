@@ -2,7 +2,7 @@
 title = "小市民系列"
 slug = "shoushimin_series"
 date = "2024-09-09T21:09:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/shoushimin_series/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/shoushimin_series/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

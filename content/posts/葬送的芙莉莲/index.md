@@ -2,7 +2,7 @@
 title = "葬送的芙莉莲"
 slug = "sousou_no_frieren"
 date = "2023-12-05T00:52:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/sousou_no_frieren/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/sousou_no_frieren/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年10月"]
 +++

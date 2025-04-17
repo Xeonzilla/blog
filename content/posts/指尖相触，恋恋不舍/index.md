@@ -2,7 +2,7 @@
 title = "指尖相触，恋恋不舍"
 slug = "yubisaki_to_renren"
 date = "2024-02-14T23:02:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/yubisaki_to_renren/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/yubisaki_to_renren/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

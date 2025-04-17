@@ -2,7 +2,7 @@
 title = "Chroma Shift与RGB Shift"
 slug = "chroma_shift_and_rgb_shift"
 date = "2024-09-11T23:26:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/chroma_shift_and_rgb_shift/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/chroma_shift_and_rgb_shift/cover.avif"
 tags = ["动画", "二次元"]
 series = ["动画科学"]
 +++

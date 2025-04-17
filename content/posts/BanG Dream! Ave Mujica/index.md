@@ -1,7 +1,7 @@
 +++
 title = "BanG Dream! Ave Mujica"
 slug = "bang_dream_ave_mujica"
-featureimage = "https://xeonzilla.top/api/r2?path=img/bang_dream_ave_mujica/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bang_dream_ave_mujica/cover.avif"
 date = "2025-02-02T20:38:00+08:00"
 tags = ["动画", "二次元"]
 series = ["TV动画 2025年1月"]

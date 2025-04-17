@@ -1,7 +1,7 @@
 +++
 title = "为博客添加Bangumi页面"
 slug = "blog_bangumi"
-featureimage = "https://xeonzilla.top/api/r2?path=img/blog_bangumi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/blog_bangumi/cover.avif"
 date = "2025-04-15T22:52:00+08:00"
 tags = ["技术", "Hugo"]
 +++

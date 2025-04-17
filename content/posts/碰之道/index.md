@@ -2,7 +2,7 @@
 title = "碰之道"
 slug = "pon_no_michi"
 date = "2024-03-22T16:00:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/pon_no_michi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/pon_no_michi/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

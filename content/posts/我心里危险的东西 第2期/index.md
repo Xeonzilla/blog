@@ -3,7 +3,7 @@ title = "我心里危险的东西 第2期"
 slug = "bokuyaba_season2"
 date = "2024-03-31T20:01:00+08:00"
 lastmod = "2024-05-26T13:26:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/bokuyaba_season2/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bokuyaba_season2/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

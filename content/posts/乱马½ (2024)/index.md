@@ -2,7 +2,7 @@
 title = "乱马½ (2024)"
 slug = "ranma_2024"
 date = "2024-11-28T23:54:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/ranma_2024/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/ranma_2024/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年10月"]
 +++

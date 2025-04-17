@@ -3,7 +3,7 @@ title = "鹿乃子乃子虎视眈眈"
 slug = "shikanoko"
 date = "2024-03-13T19:58:00+08:00"
 lastmod = "2024-10-09T22:48:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/shikanoko/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/shikanoko/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

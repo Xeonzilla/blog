@@ -2,7 +2,7 @@
 title = "单人房、日照一般、附天使。"
 slug = "tenshitsuki"
 date = "2024-06-13T21:00:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/tenshitsuki/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/tenshitsuki/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

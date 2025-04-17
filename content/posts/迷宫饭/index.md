@@ -2,7 +2,7 @@
 title = "迷宫饭"
 slug = "danjon_meshi"
 date = "2024-03-04T21:11:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/danjon_meshi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/danjon_meshi/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

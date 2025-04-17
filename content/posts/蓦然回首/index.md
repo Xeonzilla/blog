@@ -2,7 +2,7 @@
 title = "蓦然回首"
 slug = "look_back"
 date = "2024-11-14T00:49:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/look_back/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/look_back/cover.avif"
 tags = ["动画", "二次元"]
 series = ["剧场版动画"]
 +++

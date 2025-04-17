@@ -3,7 +3,7 @@ title = "亦叶亦花"
 slug = "narenare"
 date = "2024-09-20T14:31:00+08:00"
 lastmod = "2024-10-10T14:32:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/narenare/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/narenare/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

@@ -2,7 +2,7 @@
 title = "更衣人偶坠入爱河"
 slug = "bisque_koi"
 date = "2023-12-06T00:49:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/bisque_koi/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bisque_koi/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2022年1月"]
 +++

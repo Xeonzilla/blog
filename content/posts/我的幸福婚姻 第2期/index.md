@@ -2,7 +2,7 @@
 title = "我的幸福婚姻 第2期"
 slug = "watakon_season2"
 date = "2025-03-19T23:40:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/watakon_season2/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/watakon_season2/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2025年1月"]
 +++

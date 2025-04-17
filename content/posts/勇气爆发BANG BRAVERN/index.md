@@ -3,7 +3,7 @@ title = "勇气爆发BANG BRAVERN"
 slug = "bang_bravern"
 date = "2024-03-22T22:33:00+08:00"
 lastmod = "2024-03-29T13:24:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/bang_bravern/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/bang_bravern/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年1月"]
 +++

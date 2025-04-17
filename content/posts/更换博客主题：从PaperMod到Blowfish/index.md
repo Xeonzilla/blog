@@ -2,7 +2,7 @@
 title = "更换博客主题：从PaperMod到Blowfish"
 slug = "from_papermod_to_blowfish"
 date = "2024-09-19T22:59:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/from_papermod_to_blowfish/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/from_papermod_to_blowfish/cover.avif"
 tags = ["技术", "Hugo", "PaperMod", "Blowfish"]
 +++
 花了几天的空闲时间，把我的博客主题从PaperMod[^1]更换成了Blowfish[^2]，顺便整理了一下博客目录下的各种文件。整个博客瞬间焕然一新，显得更加现代与美观了。

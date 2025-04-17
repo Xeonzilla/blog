@@ -2,7 +2,7 @@
 title = "ATRI -My Dear Moments-"
 slug = "atri_my_dear_moments"
 date = "2024-10-19T23:30:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/atri_my_dear_moments/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/atri_my_dear_moments/cover.avif"
 tags = ["Galgame", "动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

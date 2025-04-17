@@ -3,7 +3,7 @@ title = "吹响！上低音号3"
 slug = "sound_euphonium_season3"
 date = "2024-06-26T01:06:00+08:00"
 lastmod = "2025-01-16T23:18:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/sound_euphonium_season3/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/sound_euphonium_season3/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

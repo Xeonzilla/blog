@@ -2,7 +2,7 @@
 title = "群花绽放，彷如修罗"
 slug = "hanashura"
 date = "2025-03-08T14:17:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/hanashura/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/hanashura/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2025年1月"]
 +++

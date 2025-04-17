@@ -2,7 +2,7 @@
 title = "声优广播的台前幕后"
 slug = "seiyuradio"
 date = "2024-05-02T22:47:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/seiyuradio/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/seiyuradio/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

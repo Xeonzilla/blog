@@ -2,7 +2,7 @@
 title = "悲喜渔生"
 slug = "negaposi_angler"
 date = "2025-01-09T21:14:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/negaposi_angler/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/negaposi_angler/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年10月"]
 +++

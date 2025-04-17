@@ -2,7 +2,7 @@
 title = "不时轻声地以俄语遮羞的邻座艾莉同学"
 slug = "roshidere"
 date = "2024-08-17T13:50:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/roshidere/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/roshidere/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年7月"]
 +++

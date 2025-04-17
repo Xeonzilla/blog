@@ -2,7 +2,7 @@
 title = "摇曳露营△ 第3期"
 slug = "yuru_camp_season3"
 date = "2024-05-26T21:58:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/yuru_camp_season3/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/yuru_camp_season3/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++

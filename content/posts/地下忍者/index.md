@@ -2,7 +2,7 @@
 title = "地下忍者"
 slug = "under_ninja"
 date = "2023-12-01T00:31:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/under_ninja/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/under_ninja/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2023年10月"]
 +++

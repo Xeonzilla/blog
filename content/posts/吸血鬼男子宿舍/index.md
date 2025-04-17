@@ -2,7 +2,7 @@
 title = "吸血鬼男子宿舍"
 slug = "vanpaia_domitorii"
 date = "2024-06-07T20:06:00+08:00"
-featureimage = "https://xeonzilla.top/api/r2?path=img/vanpaia_domitorii/feature.avif"
+featureimage = "https://xeonzilla.top/api/r2?path=img/vanpaia_domitorii/cover.avif"
 tags = ["动画", "二次元"]
 series = ["TV动画 2024年4月"]
 +++
